@@ -16,8 +16,8 @@ namespace LiveSplit.LADX
         public ComponentCategory Category => ComponentCategory.Control;
 
         public string UpdateName => ComponentName;
-        public string XMLURL => "";
-        public string UpdateURL => "";
+        public string UpdateURL => "https://raw.githubusercontent.com/Spiraster/LiveSplit.LADX/master/";
+        public string XMLURL => UpdateURL + "Components/update.LiveSplit.LADX.xml";
 
         public IComponent Create(LiveSplitState state)
         {
