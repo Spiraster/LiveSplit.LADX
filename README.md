@@ -18,8 +18,8 @@ The automatic file select function (#2) involves bringing the emulator to the fo
 To use it you'll need to map either your start button or A button to "]". There's no option yet to change which key is used.
 
 ## Installation
-- Place "LiveSplit.LADX.dll" in your LiveSplit "Components" folder.
-- Open LiveSplit and add "LADX Autosplitter" to your layout.
+- Go to "Edit Splits..." in LiveSplit.
+- Click the "Activate" button to download and enable the autosplitter (make sure the game name is correct).
 
 ## Set-up
 - Create your splits how you'd like.
