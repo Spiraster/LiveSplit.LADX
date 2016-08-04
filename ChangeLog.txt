@@ -1,3 +1,7 @@
+2.3.2 (2016-08-03):
+- Added support for updates through LiveSplit
+- Slightly tweaked the UI
+
 2.3.1 (2016-08-02):
 - The auto reset now only triggers on hard resets
 - Implemented new map data pointers for dungeon entrance splits to remove awkward delay (compared to using music pointer)
