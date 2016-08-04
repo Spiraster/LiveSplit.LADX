@@ -1,0 +1,69 @@
+2.3.1 (2016-08-02):
+- The auto reset now only triggers on hard resets
+- Implemented new map data pointers for dungeon entrance splits to remove awkward delay (compared to using music pointer)
+- Changed the auto start to a simpler trigger
+- The autosplitter now checks the game version every time the timer starts
+- Minor code changes and renaming of UI elements
+- Fixed issue where the textboxes would be empty after adding the autosplitter to the layout
+- Fixed issues with ICS timings:
+  - D7 and D8 wouldn't split
+  - D4 would split early
+
+2.3.0 (2016-07-19):
+- Added new split conditions for when using ICS in LA
+- Added option to toggle ICS splits
+- Consolidated pointer code & added new constructor for DeepPointer
+- Reorganized the split tabs in the settings UI
+- Fixed issue with timer not automatically starting or resetting with LA
+
+2.2.2 (2016-05-29):
+- Fixed the L1 & L2 sword splits (accidentally swapped their indices)
+
+2.2.1 (2016-05-28):
+- Fixed the Tunic/D0 split splitting early
+- Added default split names to settings (default names will now show in the text boxes)
+- Removed hard coding for default split names
+
+2.2.0 (2016-05-26):
+- Added a number of new split conditions (primarily for 100% runs)
+- Streamlined the Settings code
+
+2.1.4 (2016-05-16):
+- Increased delay between attemps to find the game process (added separate timer)
+- Fixed timer auto-starting when copying a file
+
+2.1.3 (2016-05-11):
+- Severely reduced the amount the autosplitter reads the game memory (eliminated the lag I was experiencing)
+- Auto reset now works after a completed run
+
+2.1.2:
+- Updated Gambatte pointers AGAIN (previous ones [5 offsets] were affected by how the ROM was loaded, new ones [6 offsets] may finally be consistent)
+
+2.1.1:
+- Fixed issue where the auto reset would reset after dying to the shopkeeper
+
+2.1.0 (2016-05-10):
+- Added "auto reset" option
+- Further refined the pointers for all 3 emulators (hopefully fixes Gambatte issues)
+
+2.0.3 (2016-05-06):
+- Added support for LA
+
+2.0.2 (2016-05-03):
+- Changed the way the autosplitter finds the emulator process
+- Added pointers for BGB 1.5.2
+- Changed Gambatte pointers
+
+2.0.1 (2016-04-30):
+- Fixed issue with autostart triggering when it shouldn't
+
+2.0.0 (2016-04-29):
+- Major rewrite of source code
+- Added "auto start" option for timer
+
+1.0.1 (2016-04-28):
+- Fixed "Bird Key" split condition
+- Attemped fix of "auto file select" option
+
+1.0.0 (2016-04-21):
+- Initial release

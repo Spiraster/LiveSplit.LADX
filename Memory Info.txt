@@ -1,0 +1,40 @@
+
+        
+        //13CA-13CB, music values? (seems like one byte is current and one byte is previous; though not always)
+        //1301 is the music tempo
+        //1700-170B & down to 790-79B are the tile values for the loaded screen
+        //1C10-1C8F, possibly the tile set?
+        //1B00-1B0B are the inventory slots; values 1-14 corresponding to different items
+        //1B0C-1B0F are flippers, potion, trading item (1-14), and seashells
+        //1B11-1B15 are the dungeon keys
+        //1B54 is overworld position
+        //1B65-1B6C are the instruments (actual instruments, not just grab)
+        //1B57 is the death count
+        //1B6E is # of times you've stolen
+        //1B80-1B8E are the characters for the 3 files (5 each)
+        //1B95 is mode during file select (i.e. create, select, copy, delete)
+
+		1B56 is for Bow Wow
+		1B73 is for Marin
+		1C0C is the photos
+			(In hex)
+			Photo 1: adds 1
+			Photo 2: adds 2 (Marin cliff)
+			Photo 3: adds 4 (Marin well)
+			Photo 4: adds 8 (rooster)
+			Photo 5: adds 10 (Ulrira)
+			Photo 6: adds 20 (Bow Wow)
+			Photo 7: adds 40 (shoplifting)
+			Photo 8: (fisherman)
+			Photo 10: adds 200 (Richard/Kanalet)
+		1B49 is the known ocarina songs
+			(1) Ballad: adds 4
+			(2) Mambo: adds 2
+			(3) Frog: adds 1
+
+        /*
+        module memory
+        bgb 1.5.1: 1691648
+        bgb 1.5.2: 1699840
+        gambatte r571: 5656576
+        */
