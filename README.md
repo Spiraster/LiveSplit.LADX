@@ -22,11 +22,9 @@ To use it you'll need to map either your start button or A button to "]". There'
 - Click the "Activate" button to download and enable the autosplitter (make sure the game name is correct).
 
 ## Set-up
-- Create your splits how you'd like.
-  - Choose from any number of the supported splits.
-  - They can be in any order.
-- Enter your split names into the settings dialog if yours differ from the defaults.
-  - If your split names don't match what's in the settings, the autosplitter will think that split is missing.
+- The tree view lists all the events supported by the autosplitter.
+- Select (by checking the box) each event for which you would like the autosplitter to split.
+  - Note: The autosplitter does NOT check against split names, so make sure to have only as many splits as selected events.
 
 ### Timing Option (LA Only)
 There is an option to adjust the split conditions for instruments if you use ICS (Instrument Cutscene Skip).
