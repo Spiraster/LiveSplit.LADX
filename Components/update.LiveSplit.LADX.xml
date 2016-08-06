@@ -1,4 +1,17 @@
 <updates>
+  <update version="3.0.0">
+    <files>
+      <file path="Components/LiveSplit.LADX.dll" status="changed" />
+    </files>
+    <changelog>
+      <change>
+        Overhauled settings (replaced textbox implementation with checkboxes)
+      </change>
+      <change>
+        Now simply check each split where you want the autosplitter to trigger.
+      </change>
+    </changelog>
+  </update>
   <update version="2.3.3">
     <files>
       <file path="Components/LiveSplit.LADX.dll" status="changed" />

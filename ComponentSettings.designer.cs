@@ -28,863 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.labelP1A = new System.Windows.Forms.Label();
-            this.labelP1B = new System.Windows.Forms.Label();
-            this.labelP2A = new System.Windows.Forms.Label();
-            this.labelP2B = new System.Windows.Forms.Label();
-            this.tabControl = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.lbl_D7 = new System.Windows.Forms.Label();
-            this.txt_D7 = new System.Windows.Forms.TextBox();
-            this.lbl_ED1 = new System.Windows.Forms.Label();
-            this.txt_ED1 = new System.Windows.Forms.TextBox();
-            this.lbl_ED2 = new System.Windows.Forms.Label();
-            this.txt_ED2 = new System.Windows.Forms.TextBox();
-            this.lbl_ED4 = new System.Windows.Forms.Label();
-            this.txt_ED4 = new System.Windows.Forms.TextBox();
-            this.lbl_ED3 = new System.Windows.Forms.Label();
-            this.txt_ED3 = new System.Windows.Forms.TextBox();
-            this.lbl_ED6 = new System.Windows.Forms.Label();
-            this.txt_ED6 = new System.Windows.Forms.TextBox();
-            this.lbl_D1 = new System.Windows.Forms.Label();
-            this.txt_D1 = new System.Windows.Forms.TextBox();
-            this.lbl_ED8 = new System.Windows.Forms.Label();
-            this.txt_ED8 = new System.Windows.Forms.TextBox();
-            this.lbl_D3 = new System.Windows.Forms.Label();
-            this.txt_D3 = new System.Windows.Forms.TextBox();
-            this.lbl_ED7 = new System.Windows.Forms.Label();
-            this.txt_ED7 = new System.Windows.Forms.TextBox();
-            this.lbl_D4 = new System.Windows.Forms.Label();
-            this.txt_D4 = new System.Windows.Forms.TextBox();
-            this.lbl_D6 = new System.Windows.Forms.Label();
-            this.txt_D6 = new System.Windows.Forms.TextBox();
-            this.lbl_D2 = new System.Windows.Forms.Label();
-            this.txt_D2 = new System.Windows.Forms.TextBox();
-            this.lbl_D8 = new System.Windows.Forms.Label();
-            this.txt_D8 = new System.Windows.Forms.TextBox();
-            this.lbl_ED5 = new System.Windows.Forms.Label();
-            this.txt_ED5 = new System.Windows.Forms.TextBox();
-            this.lbl_D5 = new System.Windows.Forms.Label();
-            this.txt_D5 = new System.Windows.Forms.TextBox();
-            this.lbl_ED0 = new System.Windows.Forms.Label();
-            this.txt_ED0 = new System.Windows.Forms.TextBox();
-            this.lbl_Egg = new System.Windows.Forms.Label();
-            this.txt_Egg = new System.Windows.Forms.TextBox();
-            this.lbl_D0 = new System.Windows.Forms.Label();
-            this.txt_D0 = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.txt_Shop = new System.Windows.Forms.TextBox();
-            this.lbl_Shop = new System.Windows.Forms.Label();
-            this.lbl_TK = new System.Windows.Forms.Label();
-            this.txt_TK = new System.Windows.Forms.TextBox();
-            this.lbl_BK = new System.Windows.Forms.Label();
-            this.txt_BK = new System.Windows.Forms.TextBox();
-            this.lbl_Flips = new System.Windows.Forms.Label();
-            this.txt_Flips = new System.Windows.Forms.TextBox();
-            this.lbl_Marin = new System.Windows.Forms.Label();
-            this.txt_Marin = new System.Windows.Forms.TextBox();
-            this.lbl_ML = new System.Windows.Forms.Label();
-            this.txt_ML = new System.Windows.Forms.TextBox();
-            this.lbl_L1Sword = new System.Windows.Forms.Label();
-            this.txt_L1Sword = new System.Windows.Forms.TextBox();
-            this.lbl_L2Sword = new System.Windows.Forms.Label();
-            this.txt_L2Sword = new System.Windows.Forms.TextBox();
-            this.lbl_RP = new System.Windows.Forms.Label();
-            this.txt_RP = new System.Windows.Forms.TextBox();
-            this.lbl_Song1 = new System.Windows.Forms.Label();
-            this.txt_Song1 = new System.Windows.Forms.TextBox();
-            this.lbl_Song2 = new System.Windows.Forms.Label();
-            this.txt_Song2 = new System.Windows.Forms.TextBox();
-            this.lbl_Song3 = new System.Windows.Forms.Label();
-            this.txt_Song3 = new System.Windows.Forms.TextBox();
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Tail Cave (D1)");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Bottle Grotto (D2)");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Key Cavern (D3)");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Angler\'s Tunnel (D4)");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Catfish\'s Maw (D5)");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Face Shrine (D6)");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Eagle\'s Tower (D7)");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Turtle Rock (D8)");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Color Dungeon (D0)");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Dungeon Entrances", new System.Windows.Forms.TreeNode[] {
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5,
+            treeNode6,
+            treeNode7,
+            treeNode8,
+            treeNode9});
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Full Moon Cello (D1)");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Conch Horn (D2)");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Sea Lily\'s Bell (D3)");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Surf Harp (D4)");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Wind Marimba (D5)");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Coral Triangle (D6)");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Organ of Evening Calm (D7)");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Thunder Drum (D8)");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Tunic Upgrade (D0)");
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Wind Fish\'s Egg (Final Split)");
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("Instruments (Dungeon Ends)", new System.Windows.Forms.TreeNode[] {
+            treeNode11,
+            treeNode12,
+            treeNode13,
+            treeNode14,
+            treeNode15,
+            treeNode16,
+            treeNode17,
+            treeNode18,
+            treeNode19,
+            treeNode20});
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Tail Key");
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Bird Key");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Flippers");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Magnifying Lens");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("L1 Sword");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("L2 Sword");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Items", new System.Windows.Forms.TreeNode[] {
+            treeNode22,
+            treeNode23,
+            treeNode24,
+            treeNode25,
+            treeNode26,
+            treeNode27});
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Shoplifting");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Marin");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Rooster Photo");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Ballad of the Wind Fish (Song 1)");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Manbo\'s Mambo (Song 2)");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Frog\'s Song of Soul (Song 3)");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Others", new System.Windows.Forms.TreeNode[] {
+            treeNode29,
+            treeNode30,
+            treeNode31,
+            treeNode32,
+            treeNode33,
+            treeNode34});
             this.chkStartTimer = new System.Windows.Forms.CheckBox();
             this.chkSelectFile = new System.Windows.Forms.CheckBox();
             this.chkAutoReset = new System.Windows.Forms.CheckBox();
             this.chkICSTimings = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tabControl.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
+            this.treeView1 = new LiveSplit.LADX.NewTreeView();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(367, 23);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(90, 21);
-            this.btnUpdate.TabIndex = 7;
-            this.btnUpdate.TabStop = false;
-            this.btnUpdate.Text = "Save Splits";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
-            // labelP1A
-            // 
-            this.labelP1A.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelP1A.AutoSize = true;
-            this.labelP1A.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelP1A.Location = new System.Drawing.Point(6, 3);
-            this.labelP1A.Name = "labelP1A";
-            this.labelP1A.Size = new System.Drawing.Size(105, 13);
-            this.labelP1A.TabIndex = 26;
-            this.labelP1A.Text = "Dungeon Entrances:";
-            // 
-            // labelP1B
-            // 
-            this.labelP1B.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelP1B.AutoSize = true;
-            this.labelP1B.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelP1B.Location = new System.Drawing.Point(219, 3);
-            this.labelP1B.Name = "labelP1B";
-            this.labelP1B.Size = new System.Drawing.Size(64, 13);
-            this.labelP1B.TabIndex = 27;
-            this.labelP1B.Text = "Instruments:";
-            // 
-            // labelP2A
-            // 
-            this.labelP2A.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelP2A.AutoSize = true;
-            this.labelP2A.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelP2A.Location = new System.Drawing.Point(6, 3);
-            this.labelP2A.Name = "labelP2A";
-            this.labelP2A.Size = new System.Drawing.Size(63, 13);
-            this.labelP2A.TabIndex = 11;
-            this.labelP2A.Text = "Keys/Items:";
-            // 
-            // labelP2B
-            // 
-            this.labelP2B.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelP2B.AutoSize = true;
-            this.labelP2B.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelP2B.Location = new System.Drawing.Point(219, 3);
-            this.labelP2B.Name = "labelP2B";
-            this.labelP2B.Size = new System.Drawing.Size(36, 13);
-            this.labelP2B.TabIndex = 11;
-            this.labelP2B.Text = "Other:";
-            // 
-            // tabControl
-            // 
-            this.tabControl.Controls.Add(this.tabPage1);
-            this.tabControl.Controls.Add(this.tabPage2);
-            this.tabControl.Location = new System.Drawing.Point(6, 19);
-            this.tabControl.Name = "tabControl";
-            this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(443, 340);
-            this.tabControl.TabIndex = 17;
-            this.tabControl.TabStop = false;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.labelP1A);
-            this.tabPage1.Controls.Add(this.tableLayoutPanel1);
-            this.tabPage1.Controls.Add(this.labelP1B);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(435, 314);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Page 1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.Controls.Add(this.lbl_D7, 2, 6);
-            this.tableLayoutPanel1.Controls.Add(this.txt_D7, 3, 6);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_ED1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txt_ED1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_ED2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txt_ED2, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_ED4, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.txt_ED4, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_ED3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.txt_ED3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_ED6, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.txt_ED6, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_D1, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txt_D1, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_ED8, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.txt_ED8, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_D3, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.txt_D3, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_ED7, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.txt_ED7, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_D4, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.txt_D4, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_D6, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.txt_D6, 3, 5);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_D2, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txt_D2, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_D8, 2, 7);
-            this.tableLayoutPanel1.Controls.Add(this.txt_D8, 3, 7);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_ED5, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.txt_ED5, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_D5, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.txt_D5, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_ED0, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.txt_ED0, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_Egg, 2, 9);
-            this.tableLayoutPanel1.Controls.Add(this.txt_Egg, 3, 9);
-            this.tableLayoutPanel1.Controls.Add(this.lbl_D0, 2, 8);
-            this.tableLayoutPanel1.Controls.Add(this.txt_D0, 3, 8);
-            this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 19);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 10;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(429, 293);
-            this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // lbl_D7
-            // 
-            this.lbl_D7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_D7.AutoSize = true;
-            this.lbl_D7.Location = new System.Drawing.Point(216, 175);
-            this.lbl_D7.Name = "lbl_D7";
-            this.lbl_D7.Size = new System.Drawing.Size(79, 26);
-            this.lbl_D7.TabIndex = 11;
-            this.lbl_D7.Text = "Organ of Evening Calm:";
-            // 
-            // txt_D7
-            // 
-            this.txt_D7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_D7.Location = new System.Drawing.Point(301, 178);
-            this.txt_D7.Name = "txt_D7";
-            this.txt_D7.Size = new System.Drawing.Size(125, 20);
-            this.txt_D7.TabIndex = 19;
-            // 
-            // lbl_ED1
-            // 
-            this.lbl_ED1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_ED1.AutoSize = true;
-            this.lbl_ED1.Location = new System.Drawing.Point(3, 8);
-            this.lbl_ED1.Name = "lbl_ED1";
-            this.lbl_ED1.Size = new System.Drawing.Size(79, 13);
-            this.lbl_ED1.TabIndex = 6;
-            this.lbl_ED1.Text = "Enter D1:";
-            // 
-            // txt_ED1
-            // 
-            this.txt_ED1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_ED1.Location = new System.Drawing.Point(88, 4);
-            this.txt_ED1.Name = "txt_ED1";
-            this.txt_ED1.Size = new System.Drawing.Size(122, 20);
-            this.txt_ED1.TabIndex = 3;
-            // 
-            // lbl_ED2
-            // 
-            this.lbl_ED2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_ED2.AutoSize = true;
-            this.lbl_ED2.Location = new System.Drawing.Point(3, 37);
-            this.lbl_ED2.Name = "lbl_ED2";
-            this.lbl_ED2.Size = new System.Drawing.Size(79, 13);
-            this.lbl_ED2.TabIndex = 6;
-            this.lbl_ED2.Text = "Enter D2:";
-            // 
-            // txt_ED2
-            // 
-            this.txt_ED2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_ED2.Location = new System.Drawing.Point(88, 33);
-            this.txt_ED2.Name = "txt_ED2";
-            this.txt_ED2.Size = new System.Drawing.Size(122, 20);
-            this.txt_ED2.TabIndex = 5;
-            // 
-            // lbl_ED4
-            // 
-            this.lbl_ED4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_ED4.AutoSize = true;
-            this.lbl_ED4.Location = new System.Drawing.Point(3, 95);
-            this.lbl_ED4.Name = "lbl_ED4";
-            this.lbl_ED4.Size = new System.Drawing.Size(79, 13);
-            this.lbl_ED4.TabIndex = 6;
-            this.lbl_ED4.Text = "Enter D4:";
-            // 
-            // txt_ED4
-            // 
-            this.txt_ED4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_ED4.Location = new System.Drawing.Point(88, 91);
-            this.txt_ED4.Name = "txt_ED4";
-            this.txt_ED4.Size = new System.Drawing.Size(122, 20);
-            this.txt_ED4.TabIndex = 9;
-            // 
-            // lbl_ED3
-            // 
-            this.lbl_ED3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_ED3.AutoSize = true;
-            this.lbl_ED3.Location = new System.Drawing.Point(3, 66);
-            this.lbl_ED3.Name = "lbl_ED3";
-            this.lbl_ED3.Size = new System.Drawing.Size(79, 13);
-            this.lbl_ED3.TabIndex = 6;
-            this.lbl_ED3.Text = "Enter D3:";
-            // 
-            // txt_ED3
-            // 
-            this.txt_ED3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_ED3.Location = new System.Drawing.Point(88, 62);
-            this.txt_ED3.Name = "txt_ED3";
-            this.txt_ED3.Size = new System.Drawing.Size(122, 20);
-            this.txt_ED3.TabIndex = 7;
-            // 
-            // lbl_ED6
-            // 
-            this.lbl_ED6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_ED6.AutoSize = true;
-            this.lbl_ED6.Location = new System.Drawing.Point(3, 153);
-            this.lbl_ED6.Name = "lbl_ED6";
-            this.lbl_ED6.Size = new System.Drawing.Size(79, 13);
-            this.lbl_ED6.TabIndex = 6;
-            this.lbl_ED6.Text = "Enter D6:";
-            // 
-            // txt_ED6
-            // 
-            this.txt_ED6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_ED6.Location = new System.Drawing.Point(88, 149);
-            this.txt_ED6.Name = "txt_ED6";
-            this.txt_ED6.Size = new System.Drawing.Size(122, 20);
-            this.txt_ED6.TabIndex = 13;
-            // 
-            // lbl_D1
-            // 
-            this.lbl_D1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_D1.AutoSize = true;
-            this.lbl_D1.Location = new System.Drawing.Point(216, 1);
-            this.lbl_D1.Name = "lbl_D1";
-            this.lbl_D1.Size = new System.Drawing.Size(79, 26);
-            this.lbl_D1.TabIndex = 6;
-            this.lbl_D1.Text = "Full Moon Cello:";
-            // 
-            // txt_D1
-            // 
-            this.txt_D1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_D1.Location = new System.Drawing.Point(301, 4);
-            this.txt_D1.Name = "txt_D1";
-            this.txt_D1.Size = new System.Drawing.Size(125, 20);
-            this.txt_D1.TabIndex = 4;
-            // 
-            // lbl_ED8
-            // 
-            this.lbl_ED8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_ED8.AutoSize = true;
-            this.lbl_ED8.Location = new System.Drawing.Point(3, 211);
-            this.lbl_ED8.Name = "lbl_ED8";
-            this.lbl_ED8.Size = new System.Drawing.Size(79, 13);
-            this.lbl_ED8.TabIndex = 6;
-            this.lbl_ED8.Text = "Enter D8:";
-            // 
-            // txt_ED8
-            // 
-            this.txt_ED8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_ED8.Location = new System.Drawing.Point(88, 207);
-            this.txt_ED8.Name = "txt_ED8";
-            this.txt_ED8.Size = new System.Drawing.Size(122, 20);
-            this.txt_ED8.TabIndex = 16;
-            // 
-            // lbl_D3
-            // 
-            this.lbl_D3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_D3.AutoSize = true;
-            this.lbl_D3.Location = new System.Drawing.Point(216, 66);
-            this.lbl_D3.Name = "lbl_D3";
-            this.lbl_D3.Size = new System.Drawing.Size(79, 13);
-            this.lbl_D3.TabIndex = 6;
-            this.lbl_D3.Text = "Sea Lily\'s Bell:";
-            // 
-            // txt_D3
-            // 
-            this.txt_D3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_D3.Location = new System.Drawing.Point(301, 62);
-            this.txt_D3.Name = "txt_D3";
-            this.txt_D3.Size = new System.Drawing.Size(125, 20);
-            this.txt_D3.TabIndex = 8;
-            // 
-            // lbl_ED7
-            // 
-            this.lbl_ED7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_ED7.AutoSize = true;
-            this.lbl_ED7.Location = new System.Drawing.Point(3, 182);
-            this.lbl_ED7.Name = "lbl_ED7";
-            this.lbl_ED7.Size = new System.Drawing.Size(79, 13);
-            this.lbl_ED7.TabIndex = 9;
-            this.lbl_ED7.Text = "Enter D7:";
-            // 
-            // txt_ED7
-            // 
-            this.txt_ED7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_ED7.Location = new System.Drawing.Point(88, 178);
-            this.txt_ED7.Name = "txt_ED7";
-            this.txt_ED7.Size = new System.Drawing.Size(122, 20);
-            this.txt_ED7.TabIndex = 18;
-            // 
-            // lbl_D4
-            // 
-            this.lbl_D4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_D4.AutoSize = true;
-            this.lbl_D4.Location = new System.Drawing.Point(216, 95);
-            this.lbl_D4.Name = "lbl_D4";
-            this.lbl_D4.Size = new System.Drawing.Size(79, 13);
-            this.lbl_D4.TabIndex = 10;
-            this.lbl_D4.Text = "Surf Harp:";
-            // 
-            // txt_D4
-            // 
-            this.txt_D4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_D4.Location = new System.Drawing.Point(301, 91);
-            this.txt_D4.Name = "txt_D4";
-            this.txt_D4.Size = new System.Drawing.Size(125, 20);
-            this.txt_D4.TabIndex = 20;
-            // 
-            // lbl_D6
-            // 
-            this.lbl_D6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_D6.AutoSize = true;
-            this.lbl_D6.Location = new System.Drawing.Point(216, 153);
-            this.lbl_D6.Name = "lbl_D6";
-            this.lbl_D6.Size = new System.Drawing.Size(79, 13);
-            this.lbl_D6.TabIndex = 6;
-            this.lbl_D6.Text = "Coral Triangle:";
-            // 
-            // txt_D6
-            // 
-            this.txt_D6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_D6.Location = new System.Drawing.Point(301, 149);
-            this.txt_D6.Name = "txt_D6";
-            this.txt_D6.Size = new System.Drawing.Size(125, 20);
-            this.txt_D6.TabIndex = 14;
-            // 
-            // lbl_D2
-            // 
-            this.lbl_D2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_D2.AutoSize = true;
-            this.lbl_D2.Location = new System.Drawing.Point(216, 37);
-            this.lbl_D2.Name = "lbl_D2";
-            this.lbl_D2.Size = new System.Drawing.Size(79, 13);
-            this.lbl_D2.TabIndex = 6;
-            this.lbl_D2.Text = "Conch Horn:";
-            // 
-            // txt_D2
-            // 
-            this.txt_D2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_D2.Location = new System.Drawing.Point(301, 33);
-            this.txt_D2.Name = "txt_D2";
-            this.txt_D2.Size = new System.Drawing.Size(125, 20);
-            this.txt_D2.TabIndex = 6;
-            // 
-            // lbl_D8
-            // 
-            this.lbl_D8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_D8.AutoSize = true;
-            this.lbl_D8.Location = new System.Drawing.Point(216, 211);
-            this.lbl_D8.Name = "lbl_D8";
-            this.lbl_D8.Size = new System.Drawing.Size(79, 13);
-            this.lbl_D8.TabIndex = 7;
-            this.lbl_D8.Text = "Thunder Drum:";
-            // 
-            // txt_D8
-            // 
-            this.txt_D8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_D8.Location = new System.Drawing.Point(301, 207);
-            this.txt_D8.Name = "txt_D8";
-            this.txt_D8.Size = new System.Drawing.Size(125, 20);
-            this.txt_D8.TabIndex = 17;
-            // 
-            // lbl_ED5
-            // 
-            this.lbl_ED5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_ED5.AutoSize = true;
-            this.lbl_ED5.Location = new System.Drawing.Point(3, 124);
-            this.lbl_ED5.Name = "lbl_ED5";
-            this.lbl_ED5.Size = new System.Drawing.Size(79, 13);
-            this.lbl_ED5.TabIndex = 6;
-            this.lbl_ED5.Text = "Enter D5:";
-            // 
-            // txt_ED5
-            // 
-            this.txt_ED5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_ED5.Location = new System.Drawing.Point(88, 120);
-            this.txt_ED5.Name = "txt_ED5";
-            this.txt_ED5.Size = new System.Drawing.Size(122, 20);
-            this.txt_ED5.TabIndex = 11;
-            // 
-            // lbl_D5
-            // 
-            this.lbl_D5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_D5.AutoSize = true;
-            this.lbl_D5.Location = new System.Drawing.Point(216, 124);
-            this.lbl_D5.Name = "lbl_D5";
-            this.lbl_D5.Size = new System.Drawing.Size(79, 13);
-            this.lbl_D5.TabIndex = 6;
-            this.lbl_D5.Text = "Wind Marimba:";
-            // 
-            // txt_D5
-            // 
-            this.txt_D5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_D5.Location = new System.Drawing.Point(301, 120);
-            this.txt_D5.Name = "txt_D5";
-            this.txt_D5.Size = new System.Drawing.Size(125, 20);
-            this.txt_D5.TabIndex = 12;
-            // 
-            // lbl_ED0
-            // 
-            this.lbl_ED0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_ED0.AutoSize = true;
-            this.lbl_ED0.Location = new System.Drawing.Point(3, 240);
-            this.lbl_ED0.Name = "lbl_ED0";
-            this.lbl_ED0.Size = new System.Drawing.Size(79, 13);
-            this.lbl_ED0.TabIndex = 22;
-            this.lbl_ED0.Text = "Enter D0:";
-            // 
-            // txt_ED0
-            // 
-            this.txt_ED0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_ED0.Location = new System.Drawing.Point(88, 236);
-            this.txt_ED0.Name = "txt_ED0";
-            this.txt_ED0.Size = new System.Drawing.Size(122, 20);
-            this.txt_ED0.TabIndex = 23;
-            // 
-            // lbl_Egg
-            // 
-            this.lbl_Egg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_Egg.AutoSize = true;
-            this.lbl_Egg.Location = new System.Drawing.Point(216, 264);
-            this.lbl_Egg.Name = "lbl_Egg";
-            this.lbl_Egg.Size = new System.Drawing.Size(79, 26);
-            this.lbl_Egg.TabIndex = 8;
-            this.lbl_Egg.Text = "Wind Fish\'s Egg:";
-            // 
-            // txt_Egg
-            // 
-            this.txt_Egg.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Egg.Location = new System.Drawing.Point(301, 267);
-            this.txt_Egg.Name = "txt_Egg";
-            this.txt_Egg.Size = new System.Drawing.Size(125, 20);
-            this.txt_Egg.TabIndex = 21;
-            // 
-            // lbl_D0
-            // 
-            this.lbl_D0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_D0.AutoSize = true;
-            this.lbl_D0.Location = new System.Drawing.Point(216, 233);
-            this.lbl_D0.Name = "lbl_D0";
-            this.lbl_D0.Size = new System.Drawing.Size(79, 26);
-            this.lbl_D0.TabIndex = 24;
-            this.lbl_D0.Text = "Tunic Upgrade:";
-            // 
-            // txt_D0
-            // 
-            this.txt_D0.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_D0.Location = new System.Drawing.Point(301, 236);
-            this.txt_D0.Name = "txt_D0";
-            this.txt_D0.Size = new System.Drawing.Size(125, 20);
-            this.txt_D0.TabIndex = 25;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.tableLayoutPanel2);
-            this.tabPage2.Controls.Add(this.labelP2B);
-            this.tabPage2.Controls.Add(this.labelP2A);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(435, 314);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Page 2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.AutoSize = true;
-            this.tableLayoutPanel2.ColumnCount = 4;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel2.Controls.Add(this.txt_Shop, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lbl_Shop, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lbl_TK, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.txt_TK, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.lbl_BK, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.txt_BK, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lbl_Flips, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.txt_Flips, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.lbl_Marin, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.txt_Marin, 3, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lbl_ML, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.txt_ML, 1, 3);
-            this.tableLayoutPanel2.Controls.Add(this.lbl_L1Sword, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.txt_L1Sword, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.lbl_L2Sword, 0, 5);
-            this.tableLayoutPanel2.Controls.Add(this.txt_L2Sword, 1, 5);
-            this.tableLayoutPanel2.Controls.Add(this.lbl_RP, 2, 2);
-            this.tableLayoutPanel2.Controls.Add(this.txt_RP, 3, 2);
-            this.tableLayoutPanel2.Controls.Add(this.lbl_Song1, 2, 3);
-            this.tableLayoutPanel2.Controls.Add(this.txt_Song1, 3, 3);
-            this.tableLayoutPanel2.Controls.Add(this.lbl_Song2, 2, 4);
-            this.tableLayoutPanel2.Controls.Add(this.txt_Song2, 3, 4);
-            this.tableLayoutPanel2.Controls.Add(this.lbl_Song3, 2, 5);
-            this.tableLayoutPanel2.Controls.Add(this.txt_Song3, 3, 5);
-            this.tableLayoutPanel2.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 19);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 10;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.999999F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(429, 293);
-            this.tableLayoutPanel2.TabIndex = 1;
-            // 
-            // txt_Shop
-            // 
-            this.txt_Shop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Shop.Location = new System.Drawing.Point(301, 4);
-            this.txt_Shop.Name = "txt_Shop";
-            this.txt_Shop.Size = new System.Drawing.Size(125, 20);
-            this.txt_Shop.TabIndex = 14;
-            // 
-            // lbl_Shop
-            // 
-            this.lbl_Shop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_Shop.AutoSize = true;
-            this.lbl_Shop.Location = new System.Drawing.Point(216, 8);
-            this.lbl_Shop.Name = "lbl_Shop";
-            this.lbl_Shop.Size = new System.Drawing.Size(79, 13);
-            this.lbl_Shop.TabIndex = 13;
-            this.lbl_Shop.Text = "Shoplifting:";
-            // 
-            // lbl_TK
-            // 
-            this.lbl_TK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_TK.AutoSize = true;
-            this.lbl_TK.Location = new System.Drawing.Point(3, 8);
-            this.lbl_TK.Name = "lbl_TK";
-            this.lbl_TK.Size = new System.Drawing.Size(79, 13);
-            this.lbl_TK.TabIndex = 11;
-            this.lbl_TK.Text = "Tail Key:";
-            // 
-            // txt_TK
-            // 
-            this.txt_TK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_TK.Location = new System.Drawing.Point(88, 4);
-            this.txt_TK.Name = "txt_TK";
-            this.txt_TK.Size = new System.Drawing.Size(122, 20);
-            this.txt_TK.TabIndex = 12;
-            // 
-            // lbl_BK
-            // 
-            this.lbl_BK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_BK.AutoSize = true;
-            this.lbl_BK.Location = new System.Drawing.Point(3, 37);
-            this.lbl_BK.Name = "lbl_BK";
-            this.lbl_BK.Size = new System.Drawing.Size(79, 13);
-            this.lbl_BK.TabIndex = 15;
-            this.lbl_BK.Text = "Bird Key:";
-            // 
-            // txt_BK
-            // 
-            this.txt_BK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_BK.Location = new System.Drawing.Point(88, 33);
-            this.txt_BK.Name = "txt_BK";
-            this.txt_BK.Size = new System.Drawing.Size(122, 20);
-            this.txt_BK.TabIndex = 16;
-            // 
-            // lbl_Flips
-            // 
-            this.lbl_Flips.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_Flips.AutoSize = true;
-            this.lbl_Flips.Location = new System.Drawing.Point(3, 66);
-            this.lbl_Flips.Name = "lbl_Flips";
-            this.lbl_Flips.Size = new System.Drawing.Size(79, 13);
-            this.lbl_Flips.TabIndex = 18;
-            this.lbl_Flips.Text = "Flippers:";
-            // 
-            // txt_Flips
-            // 
-            this.txt_Flips.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Flips.Location = new System.Drawing.Point(88, 62);
-            this.txt_Flips.Name = "txt_Flips";
-            this.txt_Flips.Size = new System.Drawing.Size(122, 20);
-            this.txt_Flips.TabIndex = 19;
-            // 
-            // lbl_Marin
-            // 
-            this.lbl_Marin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_Marin.AutoSize = true;
-            this.lbl_Marin.Location = new System.Drawing.Point(216, 37);
-            this.lbl_Marin.Name = "lbl_Marin";
-            this.lbl_Marin.Size = new System.Drawing.Size(79, 13);
-            this.lbl_Marin.TabIndex = 6;
-            this.lbl_Marin.Text = "Get Marin:";
-            // 
-            // txt_Marin
-            // 
-            this.txt_Marin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Marin.Location = new System.Drawing.Point(301, 33);
-            this.txt_Marin.Name = "txt_Marin";
-            this.txt_Marin.Size = new System.Drawing.Size(125, 20);
-            this.txt_Marin.TabIndex = 1;
-            // 
-            // lbl_ML
-            // 
-            this.lbl_ML.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_ML.AutoSize = true;
-            this.lbl_ML.Location = new System.Drawing.Point(3, 88);
-            this.lbl_ML.Name = "lbl_ML";
-            this.lbl_ML.Size = new System.Drawing.Size(79, 26);
-            this.lbl_ML.TabIndex = 6;
-            this.lbl_ML.Text = "Magnifying Lens:";
-            // 
-            // txt_ML
-            // 
-            this.txt_ML.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_ML.Location = new System.Drawing.Point(88, 91);
-            this.txt_ML.Name = "txt_ML";
-            this.txt_ML.Size = new System.Drawing.Size(122, 20);
-            this.txt_ML.TabIndex = 8;
-            // 
-            // lbl_L1Sword
-            // 
-            this.lbl_L1Sword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_L1Sword.AutoSize = true;
-            this.lbl_L1Sword.Location = new System.Drawing.Point(3, 124);
-            this.lbl_L1Sword.Name = "lbl_L1Sword";
-            this.lbl_L1Sword.Size = new System.Drawing.Size(79, 13);
-            this.lbl_L1Sword.TabIndex = 6;
-            this.lbl_L1Sword.Text = "L1 Sword:";
-            // 
-            // txt_L1Sword
-            // 
-            this.txt_L1Sword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_L1Sword.Location = new System.Drawing.Point(88, 120);
-            this.txt_L1Sword.Name = "txt_L1Sword";
-            this.txt_L1Sword.Size = new System.Drawing.Size(122, 20);
-            this.txt_L1Sword.TabIndex = 9;
-            // 
-            // lbl_L2Sword
-            // 
-            this.lbl_L2Sword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_L2Sword.AutoSize = true;
-            this.lbl_L2Sword.Location = new System.Drawing.Point(3, 153);
-            this.lbl_L2Sword.Name = "lbl_L2Sword";
-            this.lbl_L2Sword.Size = new System.Drawing.Size(79, 13);
-            this.lbl_L2Sword.TabIndex = 6;
-            this.lbl_L2Sword.Text = "L2 Sword:";
-            // 
-            // txt_L2Sword
-            // 
-            this.txt_L2Sword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_L2Sword.Location = new System.Drawing.Point(88, 149);
-            this.txt_L2Sword.Name = "txt_L2Sword";
-            this.txt_L2Sword.Size = new System.Drawing.Size(122, 20);
-            this.txt_L2Sword.TabIndex = 10;
-            // 
-            // lbl_RP
-            // 
-            this.lbl_RP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_RP.AutoSize = true;
-            this.lbl_RP.Location = new System.Drawing.Point(216, 66);
-            this.lbl_RP.Name = "lbl_RP";
-            this.lbl_RP.Size = new System.Drawing.Size(79, 13);
-            this.lbl_RP.TabIndex = 6;
-            this.lbl_RP.Text = "Rooster Photo:";
-            // 
-            // txt_RP
-            // 
-            this.txt_RP.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_RP.Location = new System.Drawing.Point(301, 62);
-            this.txt_RP.Name = "txt_RP";
-            this.txt_RP.Size = new System.Drawing.Size(125, 20);
-            this.txt_RP.TabIndex = 2;
-            // 
-            // lbl_Song1
-            // 
-            this.lbl_Song1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_Song1.AutoSize = true;
-            this.lbl_Song1.Location = new System.Drawing.Point(216, 95);
-            this.lbl_Song1.Name = "lbl_Song1";
-            this.lbl_Song1.Size = new System.Drawing.Size(79, 13);
-            this.lbl_Song1.TabIndex = 6;
-            this.lbl_Song1.Text = "Marin\'s Song:";
-            // 
-            // txt_Song1
-            // 
-            this.txt_Song1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Song1.Location = new System.Drawing.Point(301, 91);
-            this.txt_Song1.Name = "txt_Song1";
-            this.txt_Song1.Size = new System.Drawing.Size(125, 20);
-            this.txt_Song1.TabIndex = 3;
-            // 
-            // lbl_Song2
-            // 
-            this.lbl_Song2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_Song2.AutoSize = true;
-            this.lbl_Song2.Location = new System.Drawing.Point(216, 117);
-            this.lbl_Song2.Name = "lbl_Song2";
-            this.lbl_Song2.Size = new System.Drawing.Size(79, 26);
-            this.lbl_Song2.TabIndex = 6;
-            this.lbl_Song2.Text = "Manbo\'s Mambo:";
-            // 
-            // txt_Song2
-            // 
-            this.txt_Song2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Song2.Location = new System.Drawing.Point(301, 120);
-            this.txt_Song2.Name = "txt_Song2";
-            this.txt_Song2.Size = new System.Drawing.Size(125, 20);
-            this.txt_Song2.TabIndex = 4;
-            // 
-            // lbl_Song3
-            // 
-            this.lbl_Song3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_Song3.AutoSize = true;
-            this.lbl_Song3.Location = new System.Drawing.Point(216, 153);
-            this.lbl_Song3.Name = "lbl_Song3";
-            this.lbl_Song3.Size = new System.Drawing.Size(79, 13);
-            this.lbl_Song3.TabIndex = 7;
-            this.lbl_Song3.Text = "Frog Song:";
-            // 
-            // txt_Song3
-            // 
-            this.txt_Song3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txt_Song3.Location = new System.Drawing.Point(301, 149);
-            this.txt_Song3.Name = "txt_Song3";
-            this.txt_Song3.Size = new System.Drawing.Size(125, 20);
-            this.txt_Song3.TabIndex = 5;
             // 
             // chkStartTimer
             // 
@@ -948,33 +167,109 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.tabControl);
+            this.groupBox1.Controls.Add(this.treeView1);
             this.groupBox1.Location = new System.Drawing.Point(10, 10);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(455, 364);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Split Names";
+            this.groupBox1.Text = "Select the splits you would like the autosplitter to split for:";
+            // 
+            // treeView1
+            // 
+            this.treeView1.CheckBoxes = true;
+            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeView1.DrawMode = System.Windows.Forms.TreeViewDrawMode.OwnerDrawAll;
+            this.treeView1.Location = new System.Drawing.Point(3, 16);
+            this.treeView1.Name = "treeView1";
+            treeNode1.Name = "node_ED1";
+            treeNode1.Text = "Tail Cave (D1)";
+            treeNode2.Name = "node_ED2";
+            treeNode2.Text = "Bottle Grotto (D2)";
+            treeNode3.Name = "node_ED3";
+            treeNode3.Text = "Key Cavern (D3)";
+            treeNode4.Name = "node_ED4";
+            treeNode4.Text = "Angler\'s Tunnel (D4)";
+            treeNode5.Name = "node_ED5";
+            treeNode5.Text = "Catfish\'s Maw (D5)";
+            treeNode6.Name = "node_ED6";
+            treeNode6.Text = "Face Shrine (D6)";
+            treeNode7.Name = "node_ED7";
+            treeNode7.Text = "Eagle\'s Tower (D7)";
+            treeNode8.Name = "node_ED8";
+            treeNode8.Text = "Turtle Rock (D8)";
+            treeNode9.Name = "node_ED0";
+            treeNode9.Text = "Color Dungeon (D0)";
+            treeNode10.Name = "Node0";
+            treeNode10.Text = "Dungeon Entrances";
+            treeNode11.Name = "node_D1";
+            treeNode11.Text = "Full Moon Cello (D1)";
+            treeNode12.Name = "node_D2";
+            treeNode12.Text = "Conch Horn (D2)";
+            treeNode13.Name = "node_D3";
+            treeNode13.Text = "Sea Lily\'s Bell (D3)";
+            treeNode14.Name = "node_D4";
+            treeNode14.Text = "Surf Harp (D4)";
+            treeNode15.Name = "node_D5";
+            treeNode15.Text = "Wind Marimba (D5)";
+            treeNode16.Name = "node_D6";
+            treeNode16.Text = "Coral Triangle (D6)";
+            treeNode17.Name = "node_D7";
+            treeNode17.Text = "Organ of Evening Calm (D7)";
+            treeNode18.Name = "node_D8";
+            treeNode18.Text = "Thunder Drum (D8)";
+            treeNode19.Name = "node_D0";
+            treeNode19.Text = "Tunic Upgrade (D0)";
+            treeNode20.Name = "node_Egg";
+            treeNode20.Text = "Wind Fish\'s Egg (Final Split)";
+            treeNode21.Name = "Node1";
+            treeNode21.Text = "Instruments (Dungeon Ends)";
+            treeNode22.Name = "node_TK";
+            treeNode22.Text = "Tail Key";
+            treeNode23.Name = "node_BK";
+            treeNode23.Text = "Bird Key";
+            treeNode24.Name = "node_Flippers";
+            treeNode24.Text = "Flippers";
+            treeNode25.Name = "node_ML";
+            treeNode25.Text = "Magnifying Lens";
+            treeNode26.Name = "node_L1S";
+            treeNode26.Text = "L1 Sword";
+            treeNode27.Name = "node_L2S";
+            treeNode27.Text = "L2 Sword";
+            treeNode28.Name = "Node2";
+            treeNode28.Text = "Items";
+            treeNode29.Name = "node_Shop";
+            treeNode29.Text = "Shoplifting";
+            treeNode30.Name = "node_Marin";
+            treeNode30.Text = "Marin";
+            treeNode31.Name = "node_RP";
+            treeNode31.Text = "Rooster Photo";
+            treeNode32.Name = "node_Song1";
+            treeNode32.Text = "Ballad of the Wind Fish (Song 1)";
+            treeNode33.Name = "node_Song2";
+            treeNode33.Text = "Manbo\'s Mambo (Song 2)";
+            treeNode34.Name = "node_Song3";
+            treeNode34.Text = "Frog\'s Song of Soul (Song 3)";
+            treeNode35.Name = "Node3";
+            treeNode35.Text = "Others";
+            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode10,
+            treeNode21,
+            treeNode28,
+            treeNode35});
+            this.treeView1.Size = new System.Drawing.Size(449, 345);
+            this.treeView1.TabIndex = 0;
+            this.treeView1.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterCheck);
             // 
             // LADXSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Name = "LADXSettings";
             this.Padding = new System.Windows.Forms.Padding(7);
             this.Size = new System.Drawing.Size(475, 501);
-            this.tabControl.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -983,83 +278,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Label labelP1A;
-        private System.Windows.Forms.Label labelP1B;
-        private System.Windows.Forms.Label labelP2A;
-        private System.Windows.Forms.Label labelP2B;
-        private System.Windows.Forms.TabControl tabControl;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.CheckBox chkStartTimer;
         private System.Windows.Forms.CheckBox chkSelectFile;
         private System.Windows.Forms.CheckBox chkAutoReset;
         private System.Windows.Forms.CheckBox chkICSTimings;
-        public System.Windows.Forms.TextBox txt_Shop;
-        private System.Windows.Forms.Label lbl_Shop;
-        private System.Windows.Forms.Label lbl_TK;
-        public System.Windows.Forms.TextBox txt_TK;
-        private System.Windows.Forms.Label lbl_BK;
-        public System.Windows.Forms.TextBox txt_BK;
-        private System.Windows.Forms.Label lbl_Flips;
-        public System.Windows.Forms.TextBox txt_Flips;
-        private System.Windows.Forms.Label lbl_Marin;
-        public System.Windows.Forms.TextBox txt_Marin;
-        private System.Windows.Forms.Label lbl_ML;
-        public System.Windows.Forms.TextBox txt_ML;
-        private System.Windows.Forms.Label lbl_L1Sword;
-        public System.Windows.Forms.TextBox txt_L1Sword;
-        private System.Windows.Forms.Label lbl_L2Sword;
-        public System.Windows.Forms.TextBox txt_L2Sword;
-        private System.Windows.Forms.Label lbl_RP;
-        public System.Windows.Forms.TextBox txt_RP;
-        private System.Windows.Forms.Label lbl_Song1;
-        public System.Windows.Forms.TextBox txt_Song1;
-        private System.Windows.Forms.Label lbl_Song2;
-        public System.Windows.Forms.TextBox txt_Song2;
-        private System.Windows.Forms.Label lbl_Song3;
-        public System.Windows.Forms.TextBox txt_Song3;
-        private System.Windows.Forms.Label lbl_D7;
-        public System.Windows.Forms.TextBox txt_D7;
-        private System.Windows.Forms.Label lbl_ED1;
-        public System.Windows.Forms.TextBox txt_ED1;
-        private System.Windows.Forms.Label lbl_ED2;
-        public System.Windows.Forms.TextBox txt_ED2;
-        private System.Windows.Forms.Label lbl_ED4;
-        public System.Windows.Forms.TextBox txt_ED4;
-        private System.Windows.Forms.Label lbl_ED3;
-        public System.Windows.Forms.TextBox txt_ED3;
-        private System.Windows.Forms.Label lbl_ED6;
-        public System.Windows.Forms.TextBox txt_ED6;
-        private System.Windows.Forms.Label lbl_D1;
-        public System.Windows.Forms.TextBox txt_D1;
-        private System.Windows.Forms.Label lbl_ED8;
-        public System.Windows.Forms.TextBox txt_ED8;
-        private System.Windows.Forms.Label lbl_D3;
-        public System.Windows.Forms.TextBox txt_D3;
-        private System.Windows.Forms.Label lbl_ED7;
-        public System.Windows.Forms.TextBox txt_ED7;
-        private System.Windows.Forms.Label lbl_D4;
-        public System.Windows.Forms.TextBox txt_D4;
-        private System.Windows.Forms.Label lbl_D6;
-        public System.Windows.Forms.TextBox txt_D6;
-        private System.Windows.Forms.Label lbl_D2;
-        public System.Windows.Forms.TextBox txt_D2;
-        private System.Windows.Forms.Label lbl_D8;
-        public System.Windows.Forms.TextBox txt_D8;
-        private System.Windows.Forms.Label lbl_ED5;
-        public System.Windows.Forms.TextBox txt_ED5;
-        private System.Windows.Forms.Label lbl_D5;
-        public System.Windows.Forms.TextBox txt_D5;
-        private System.Windows.Forms.Label lbl_ED0;
-        public System.Windows.Forms.TextBox txt_ED0;
-        private System.Windows.Forms.Label lbl_Egg;
-        public System.Windows.Forms.TextBox txt_Egg;
-        private System.Windows.Forms.Label lbl_D0;
-        public System.Windows.Forms.TextBox txt_D0;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private LiveSplit.LADX.NewTreeView treeView1;
     }
 }

@@ -1,5 +1,11 @@
+3.0.0 (2016-08-06):
+- Implemented MemoryWatchers
+- Replaced old textbox settings with a treeview
+	- Segment name and order don't matter, it's up to the user to select their splits
+- Added Info, InfoList, and DefaultInfo classes to store pointer, split, and setting info
+
 2.3.3 (2016-08-03):
-- Fixed small UI issues
+- Fixed small UI issue
 
 2.3.2 (2016-08-03):
 - Added support for updates through LiveSplit

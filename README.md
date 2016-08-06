@@ -6,7 +6,7 @@ This autosplitter works with either BGB or Gambatte. It will autodetect which on
 **Supported emulators:**
 - BGB 1.5.1
 - BGB 1.5.2
-- Gambatte r571 (likely earlier versions, as well, though untested)
+- Gambatte r571
 
 ## Features
 - Automatically start the timer when you select a file.
@@ -14,7 +14,7 @@ This autosplitter works with either BGB or Gambatte. It will autodetect which on
 - Automatically reset the timer when you hard reset the emulator/ROM.
 
 **Note:**
-The automatic file select function (#2) involves bringing the emulator to the foreground and spamming the "]" key a number of times in quick succession when the timer starts.
+The automatic file select function involves bringing the emulator to the foreground and sending the "]" key a number of times in quick succession when the timer starts.
 To use it you'll need to map either your start button or A button to "]". There's no option yet to change which key is used.
 
 ## Installation

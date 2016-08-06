@@ -28,7 +28,7 @@ namespace LiveSplit.LADX
         public LADXComponent(LiveSplitState state)
         {
             settings = new LADXSettings();
-            
+
             model = new TimerModel() { CurrentState = state };
             model.CurrentState.OnStart += timer_OnStart;
 
@@ -90,7 +90,7 @@ namespace LiveSplit.LADX
                 }
                 catch { }
             }
-            
+
             if (process != null)
             {
                 if (process.MainModule.ModuleMemorySize == 1691648)
@@ -110,7 +110,11 @@ namespace LiveSplit.LADX
 
         void timer_OnStart(object sender, EventArgs e)
         {
-            memory.getVersion(game);
+            if (game != null && !game.HasExited)
+            {
+                memory.getVersion(game);
+                memory.setSplits(settings);
+            }
 
             if (AllowFS)
             {

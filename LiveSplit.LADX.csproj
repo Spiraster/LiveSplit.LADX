@@ -73,6 +73,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Info.cs" />
     <Compile Include="GameMemory.cs" />
     <Compile Include="Component.cs" />
     <Compile Include="ComponentSettings.cs">
@@ -81,13 +82,13 @@
     <Compile Include="ComponentSettings.designer.cs">
       <DependentUpon>ComponentSettings.cs</DependentUpon>
     </Compile>
-    <Compile Include="DeepPtr.cs" />
     <Compile Include="Factory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ComponentSettings.resx">
       <DependentUpon>ComponentSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

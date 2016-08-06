@@ -2,66 +2,35 @@
 using System.Windows.Forms;
 using System.Xml;
 using System.Reflection;
-using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
 namespace LiveSplit.LADX
 {
     public partial class LADXSettings : UserControl
     {
-        public string[][] SplitInfo;
-        
+        public InfoList CheckedSplits;
         public bool AutoStartTimer, AutoSelectFile, AutoReset, ICSTimings;
 
         public LADXSettings()
         {
             InitializeComponent();
+            this.treeView1.DrawMode = TreeViewDrawMode.OwnerDrawAll;
+            this.treeView1.DrawNode += new DrawTreeNodeEventHandler(treeView1.tree_DrawNode);
 
             AutoStartTimer = false;
             AutoSelectFile = false;
             AutoReset = false;
             ICSTimings = false;
-            
-            List<string[]> list = new List<string[]>();
 
-            //{ variable name, XML tag, split name }
-            list.Add(new string[] { "D1", "Cello", "full moon cello" });
-            list.Add(new string[] { "D2", "Conch", "conch horn" });
-            list.Add(new string[] { "D3", "Bell", "sea lily's bell" });
-            list.Add(new string[] { "D4", "Harp", "surf harp" });
-            list.Add(new string[] { "D5", "Marimba", "wind marimba" });
-            list.Add(new string[] { "D6", "Triangle", "coral triangle" });
-            list.Add(new string[] { "D7", "Organ", "organ of evening calm" });
-            list.Add(new string[] { "D8", "Drum", "thunder drum" });
-            list.Add(new string[] { "D0", "Tunic", "tunic upgrade" });
+            CheckedSplits = new InfoList();
 
-            list.Add(new string[] { "ED1", "EnterD1", "enter d1" });
-            list.Add(new string[] { "ED2", "EnterD2", "enter d2" });
-            list.Add(new string[] { "ED3", "EnterD3", "enter d3" });
-            list.Add(new string[] { "ED4", "EnterD4", "enter d4" });
-            list.Add(new string[] { "ED5", "EnterD5", "enter d5" });
-            list.Add(new string[] { "ED6", "EnterD6", "enter d6" });
-            list.Add(new string[] { "ED7", "EnterD7", "enter d7" });
-            list.Add(new string[] { "ED8", "EnterD8", "enter d8" });
-            list.Add(new string[] { "ED0", "EnterD0", "enter d0" });
-
-            list.Add(new string[] { "TK", "TailKey", "tail key" });
-            list.Add(new string[] { "Shop", "Shoplifting", "shoplifting" });
-            list.Add(new string[] { "Flips", "Flippers", "flippers" });
-            list.Add(new string[] { "BK", "BirdKey", "bird key" });
-            list.Add(new string[] { "Egg", "Egg", "wind fish's egg" });
-
-            list.Add(new string[] { "Marin", "Marin", "marin" });
-            list.Add(new string[] { "RP", "RoosterPhoto", "rooster photo" });
-            list.Add(new string[] { "Song1", "Song1", "ballad of the wind fish" });
-            list.Add(new string[] { "Song2", "Song2", "manbo's mambo" });
-            list.Add(new string[] { "Song3", "Song3", "song of soul" });
-            list.Add(new string[] { "ML", "MagnifyingLens", "magnifying lens" });
-            list.Add(new string[] { "L1Sword", "L1Sword", "sword" });
-            list.Add(new string[] { "L2Sword", "L2Sword", "l2 sword" });
-
-            SplitInfo = list.ToArray();
-
-            LoadSplits(null);
+            var tempList = new InfoList();
+            tempList.AddRange(DefaultInfo.BaseSplits);
+            tempList.AddRange(DefaultInfo.LADXSplits);
+            foreach (var _split in tempList)
+            {
+                CheckedSplits.Add(new Info(_split.Name, false));
+            }
         }
 
         public XmlNode GetSettings(XmlDocument document)
@@ -75,11 +44,11 @@ namespace LiveSplit.LADX
             settingsNode.AppendChild(ToElement(document, "AutoReset", AutoReset.ToString()));
             settingsNode.AppendChild(ToElement(document, "ICSTimings", ICSTimings.ToString()));
 
-            foreach (string[] split in SplitInfo)
+            foreach (var _split in CheckedSplits)
             {
-                settingsNode.AppendChild(ToElement(document, split[1], split[2]));
+                settingsNode.AppendChild(ToElement(document, _split.Name, _split.isEnabled.ToString()));
             }
-            
+
             return settingsNode;
         }
 
@@ -115,61 +84,40 @@ namespace LiveSplit.LADX
                     chkICSTimings.Checked = ICSTimings;
                 }
 
-                LoadSplits(element);
-                SaveSplits();
-            }
-        }
-
-        private TextBox GetTextBox(string search)
-        {
-            foreach (Control page in tabControl.Controls)
-            {
-                foreach (Control table in page.Controls)
+                foreach (var _split in CheckedSplits)
                 {
-                    foreach (Control c in table.Controls)
+                    if (element[_split.Name] != null)
                     {
-                        if (c.Name == "txt_" + search)
-                        {
-                            return ((TextBox)c);
-                        }
+                        bool _bool = Convert.ToBoolean(element[_split.Name].InnerText);
+
+                        _split.isEnabled = _bool;
+
+                        var node = getTreeNode(_split.Name);
+                        if (node != null)
+                            node.Checked = _bool;
                     }
                 }
             }
+        }
+
+        private TreeNode getTreeNode(string search)
+        {
+            foreach (TreeNode parent in treeView1.Nodes)
+            {
+                foreach (TreeNode node in parent.Nodes)
+                {
+                    if (node.Name == "node_" + search)
+                        return node;
+                }
+            }
+
             return null;
         }
-
-        private void SaveSplits()
+        
+        private void treeView1_AfterCheck(object sender, TreeViewEventArgs e)
         {
-            foreach (string[] split in SplitInfo)
-            {
-                var textBox = GetTextBox(split[0]);
-
-                if (textBox != null)
-                {
-                    split[2] = textBox.Text.ToLower();
-                }
-            }
-        }
-
-        private void LoadSplits(XmlElement element)
-        {
-            foreach (string[] split in SplitInfo)
-            {
-                var textBox = GetTextBox(split[0]);
-
-                if (textBox != null)
-                {
-                    if (element != null && element[split[1]] != null && element[split[1]].InnerText != "")
-                        textBox.Text = element[split[1]].InnerText;
-                    else
-                        textBox.Text = split[2];
-                }
-            }
-        }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            SaveSplits();
+            string name = e.Node.Name.Replace("node_", "");
+            CheckedSplits[name].isEnabled = e.Node.Checked;
         }
 
         private void checkAutoReset_CheckedChanged(object sender, EventArgs e)
@@ -197,6 +145,73 @@ namespace LiveSplit.LADX
             var element = document.CreateElement(name);
             element.InnerText = value.ToString();
             return element;
+        }
+    }
+
+    class NewTreeView : TreeView
+    {
+        // constants used to hide a checkbox
+        public const int TVIF_STATE = 0x8;
+        public const int TVIS_STATEIMAGEMASK = 0xF000;
+        public const int TV_FIRST = 0x1100;
+        public const int TVM_SETITEM = TV_FIRST + 63;
+
+        [DllImport("user32.dll")]
+        private static extern IntPtr SendMessage(IntPtr hWnd, int Msg, IntPtr wParam, ref TVITEM lParam);
+
+        // struct used to set node properties
+        [StructLayout(LayoutKind.Sequential, Pack = 8, CharSet = CharSet.Auto)]
+        public struct TVITEM
+        {
+            public int mask;
+            public IntPtr hItem;
+            public int state;
+            public int stateMask;
+            [MarshalAs(UnmanagedType.LPTStr)]
+            public String lpszText;
+            public int cchTextMax;
+            public int iImage;
+            public int iSelectedImage;
+            public int cChildren;
+            public IntPtr lParam;
+        }
+
+        public void tree_DrawNode(object sender, DrawTreeNodeEventArgs e)
+        {
+            if (e.Node.Level == 0)
+                HideCheckBox(e.Node);
+
+            e.DrawDefault = true;
+        }
+
+        private void HideCheckBox(TreeNode node)
+        {
+            TVITEM tvi = new TVITEM();
+            tvi.hItem = node.Handle;
+            tvi.mask = TVIF_STATE;
+            tvi.stateMask = TVIS_STATEIMAGEMASK;
+            tvi.state = 0;
+            SendMessage(node.TreeView.Handle, TVM_SETITEM, IntPtr.Zero, ref tvi);
+        }
+
+        protected override void WndProc(ref Message m)
+        {
+            if (m.Msg == 0x203) // identified double click
+            {
+                var local_pos = PointToClient(Cursor.Position);
+                var hit_test_info = HitTest(local_pos);
+
+                if (hit_test_info.Location == TreeViewHitTestLocations.StateImage)
+                {
+                    m.Msg = 0x201; // if checkbox was clicked, turn into single click
+                }
+
+                base.WndProc(ref m);
+            }
+            else
+            {
+                base.WndProc(ref m);
+            }
         }
     }
 }
