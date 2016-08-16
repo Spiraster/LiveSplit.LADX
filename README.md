@@ -33,4 +33,4 @@ There is an option to adjust the split conditions for instruments if you use ICS
 ## Credits
 - [Spiraster](http://twitch.tv/spiraster)
 - Work initially based upon old [Yoshi's Island](https://github.com/LiveSplit/LiveSplit.YoshisIsland) autosplitter.
-- Further improvements guided by the [LiveSplit.Dishonored](https://github.com/fatalis/LiveSplit.Dishonored) component by [Fatalis](http://twitch.tv/fatalis_).
+- Many improvements guided by the [LiveSplit.Dishonored](https://github.com/fatalis/LiveSplit.Dishonored) component by [Fatalis](http://twitch.tv/fatalis_).

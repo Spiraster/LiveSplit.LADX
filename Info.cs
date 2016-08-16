@@ -117,7 +117,6 @@ namespace LiveSplit.LADX
         public int Offset { get; }
 
         public Dictionary<string, int> Triggers { get; }
-        public bool hasSplit { get; set; }
 
         public bool isEnabled { get; set; }
 
@@ -135,8 +134,6 @@ namespace LiveSplit.LADX
         {
             Name = _name;
             Triggers = new Dictionary<string, int> { { _pointer, _condition } };
-
-            hasSplit = false;
         }
 
         //split
@@ -144,8 +141,6 @@ namespace LiveSplit.LADX
         {
             Name = _name;
             Triggers = _triggers;
-
-            hasSplit = false;
         }
 
         //settings

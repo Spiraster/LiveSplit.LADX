@@ -1,3 +1,6 @@
+3.0.1 (2016-08-16):
+- Fixed issue where split conditions that had triggered in a previous run wouldn't trigger again after resetting the timer.
+
 3.0.0 (2016-08-06):
 - Implemented MemoryWatchers
 - Replaced old textbox settings with a treeview

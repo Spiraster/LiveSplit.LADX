@@ -28,7 +28,7 @@ namespace LiveSplit.LADX
         {
             splits = new InfoList();
             splits.AddRange(DefaultInfo.BaseSplits);
-
+           
             if (version == GameVersion.LADX)
                 splits.AddRange(DefaultInfo.LADXSplits);
             else if (version == GameVersion.LA)
@@ -40,7 +40,7 @@ namespace LiveSplit.LADX
                     splits.Remove(splits[_setting.Name]);
             }
         }
-        
+
         public void getVersion(Process game)
         {
             data["VersionCheck"].Update(game);
@@ -84,22 +84,20 @@ namespace LiveSplit.LADX
 
             foreach (var _split in splits)
             {
-                if (!_split.hasSplit)
+                int count = 0;
+                foreach (var _trigger in _split.Triggers)
                 {
-                    int count = 0;
-                    foreach (var _trigger in _split.Triggers)
-                    {
-                        int _int = Convert.ToInt32(data[_trigger.Key].Current);
-                        if (_int == _trigger.Value)
-                            count++;
-                    }
-                    
-                    if (count == _split.Triggers.Count)
-                    {
-                        _split.hasSplit = true;
-                        return true;
-                    }
+                    int _int = Convert.ToInt32(data[_trigger.Key].Current);
+                    if (_int == _trigger.Value)
+                        count++;
                 }
+
+                if (count == _split.Triggers.Count)
+                {
+                    splits.Remove(_split);
+                    return true;
+                }
+
             }
 
             return false;
