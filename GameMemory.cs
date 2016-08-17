@@ -29,10 +29,10 @@ namespace LiveSplit.LADX
             splits = new InfoList();
             splits.AddRange(DefaultInfo.BaseSplits);
            
-            if (version == GameVersion.LADX)
-                splits.AddRange(DefaultInfo.LADXSplits);
-            else if (version == GameVersion.LA)
-                splits.AddRange(DefaultInfo.LASplits);
+            if (version == GameVersion.LA && settings.ICSTimings)
+                splits.AddRange(DefaultInfo.ICSSplits);
+            else
+                splits.AddRange(DefaultInfo.InstrumentSplits);
 
             foreach (var _setting in settings.CheckedSplits)
             {
@@ -47,13 +47,9 @@ namespace LiveSplit.LADX
 
             int _int = Convert.ToInt32(data["VersionCheck"].Current);
             if (_int == 0)
-            {
                 version = GameVersion.LA;
-            }
             else
-            {
                 version = GameVersion.LADX;
-            }
         }
 
         public bool doStart(Process game)
@@ -101,14 +97,6 @@ namespace LiveSplit.LADX
             }
 
             return false;
-        }
-
-        private enum Splits
-        {
-            D1, D2, D3, D4, D5, D6, D7, D8, D0,
-            ED1, ED2, ED3, ED4, ED5, ED6, ED7, ED8, ED0,
-            TK, Shop, Flips, BK, Egg,
-            Marin, RP, Song1, Song2, Song3, ML, L1Sword, L2Sword
         }
 
         private enum GameVersion

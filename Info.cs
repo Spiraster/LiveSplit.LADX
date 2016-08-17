@@ -81,7 +81,7 @@ namespace LiveSplit.LADX
             new Info("Egg", "Music1", 0x5939)
         };
 
-        public static InfoList LADXSplits = new InfoList
+        public static InfoList InstrumentSplits = new InfoList
         {
             //instruments
             new Info("D1", "D1Grab", 1),
@@ -94,7 +94,7 @@ namespace LiveSplit.LADX
             new Info("D8", "D8Grab", 1),
         };
 
-        public static InfoList LASplits = new InfoList
+        public static InfoList ICSSplits = new InfoList
         {
             //instruments
             new Info("D1", new Dictionary<string, int> { { "D1Instrument", 3 }, { "Music2", 5 } }),

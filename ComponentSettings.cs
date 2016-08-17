@@ -3,6 +3,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Reflection;
 using System.Runtime.InteropServices;
+using LiveSplit.LADX;
 
 namespace LiveSplit.LADX
 {
@@ -26,7 +27,7 @@ namespace LiveSplit.LADX
 
             var tempList = new InfoList();
             tempList.AddRange(DefaultInfo.BaseSplits);
-            tempList.AddRange(DefaultInfo.LADXSplits);
+            tempList.AddRange(DefaultInfo.InstrumentSplits);
             foreach (var _split in tempList)
             {
                 CheckedSplits.Add(new Info(_split.Name, false));

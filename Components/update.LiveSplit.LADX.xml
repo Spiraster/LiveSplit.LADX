@@ -1,4 +1,14 @@
 <updates>
+  <update version="3.0.2">
+    <files>
+      <file path="Components/LiveSplit.LADX.dll" status="changed" />
+    </files>
+    <changelog>
+      <change>
+        Fixed issue where ICS timings would always be used in LA regardless of the setting.
+      </change>
+    </changelog>
+  </update>
   <update version="3.0.1">
     <files>
       <file path="Components/LiveSplit.LADX.dll" status="changed" />
