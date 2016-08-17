@@ -5,7 +5,7 @@
     </files>
     <changelog>
       <change>
-        Fixed issue where ICS timings would always be used in LA regardless of the setting.
+        Fixed issue where ICS timings would always be used in LA regardless of the setting (3.0.2)
       </change>
     </changelog>
   </update>
@@ -15,7 +15,7 @@
     </files>
     <changelog>
       <change>
-        Fixed issue where certain split conditions would not trigger after resetting the timer.
+        Fixed issue where certain split conditions would not trigger after resetting the timer (3.0.1)
       </change>
     </changelog>
   </update>
@@ -25,10 +25,7 @@
     </files>
     <changelog>
       <change>
-        Overhauled settings (replaced textbox implementation with checkboxes)
-      </change>
-      <change>
-        Now simply check each split where you want the autosplitter to trigger.
+        Overhauled settings implementation (3.0.0)
       </change>
     </changelog>
   </update>
@@ -38,7 +35,7 @@
     </files>
     <changelog>
       <change>
-        Minor update to 2.3.3
+        Fixed small UI issue (2.3.3)
       </change>
     </changelog>
   </update>
@@ -48,7 +45,10 @@
     </files>
     <changelog>
       <change>
-        Minor update to 2.3.2
+        Added LiveSplit update support (2.3.2)
+      </change>
+      <change>
+        Slightly tweaked UI (2.3.2)
       </change>
     </changelog>
   </update>
@@ -58,7 +58,16 @@
     </files>
     <changelog>
       <change>
-        Inital upload to GitHub.
+        Auto reset only triggers on hard resets (2.3.1)
+      </change>
+      <change>
+        Removed delay on dungeon entrance splits (2.3.1)
+      </change>
+      <change>
+        Fixed issue with loading of settings (2.3.1)
+      </change>
+      <change>
+        Fixed issue with certain ICS split conditions (2.3.1)
       </change>
     </changelog>
   </update>
