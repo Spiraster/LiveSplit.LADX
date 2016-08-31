@@ -1,4 +1,14 @@
 <updates>
+  <update version="3.0.3">
+    <files>
+      <file path="Components/LiveSplit.LADX.dll" status="changed" />
+    </files>
+    <changelog>
+      <change>
+        Changed D8 ICS split condition to work with Blaino Skip (3.0.3)
+      </change>
+    </changelog>
+  </update>
   <update version="3.0.2">
     <files>
       <file path="Components/LiveSplit.LADX.dll" status="changed" />

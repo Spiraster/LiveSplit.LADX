@@ -104,7 +104,7 @@ namespace LiveSplit.LADX
             new Info("D5", new Dictionary<string, int> { { "D5Instrument", 2 }, { "Music2", 5 } }),
             new Info("D6", new Dictionary<string, int> { { "D6Instrument", 3 }, { "Music2", 5 } }),
             new Info("D7", new Dictionary<string, int> { { "D7Instrument", 6 }, { "Music2", 6 } }),
-            new Info("D8", new Dictionary<string, int> { { "D8Instrument", 3 }, { "Music2", 6 } }),
+            new Info("D8", new Dictionary<string, int> { { "D8Instrument", 2 }, { "Music2", 6 } }),
         };
     }
 

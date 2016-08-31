@@ -74,7 +74,7 @@ namespace LiveSplit.LADX
             return false;
         }
 
-        public bool doSplit(string segment, Process game, LADXSettings settings)
+        public bool doSplit(Process game)
         {
             data.UpdateAll(game);
 
@@ -93,7 +93,6 @@ namespace LiveSplit.LADX
                     splits.Remove(_split);
                     return true;
                 }
-
             }
 
             return false;

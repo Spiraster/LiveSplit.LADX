@@ -87,13 +87,15 @@
             System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Ballad of the Wind Fish (Song 1)");
             System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Manbo\'s Mambo (Song 2)");
             System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Frog\'s Song of Soul (Song 3)");
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Others", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("File Select (for 3ny%)");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Others", new System.Windows.Forms.TreeNode[] {
             treeNode29,
             treeNode30,
             treeNode31,
             treeNode32,
             treeNode33,
-            treeNode34});
+            treeNode34,
+            treeNode35});
             this.chkStartTimer = new System.Windows.Forms.CheckBox();
             this.chkSelectFile = new System.Windows.Forms.CheckBox();
             this.chkAutoReset = new System.Windows.Forms.CheckBox();
@@ -249,13 +251,15 @@
             treeNode33.Text = "Manbo\'s Mambo (Song 2)";
             treeNode34.Name = "node_Song3";
             treeNode34.Text = "Frog\'s Song of Soul (Song 3)";
-            treeNode35.Name = "Node3";
-            treeNode35.Text = "Others";
+            treeNode35.Name = "node_FS";
+            treeNode35.Text = "File Select (for 3ny%)";
+            treeNode36.Name = "Node3";
+            treeNode36.Text = "Others";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode10,
             treeNode21,
             treeNode28,
-            treeNode35});
+            treeNode36});
             this.treeView1.Size = new System.Drawing.Size(449, 345);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterCheck);
