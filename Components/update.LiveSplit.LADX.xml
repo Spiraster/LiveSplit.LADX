@@ -1,4 +1,14 @@
 <updates>
+  <update version="3.0.4">
+    <files>
+      <file path="Components/LiveSplit.LADX.dll" status="changed" />
+    </files>
+    <changelog>
+      <change>
+        Fixed D6 ICS split condition (3.0.4)
+      </change>
+    </changelog>
+  </update>
   <update version="3.0.3">
     <files>
       <file path="Components/LiveSplit.LADX.dll" status="changed" />
