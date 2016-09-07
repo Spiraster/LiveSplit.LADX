@@ -1,4 +1,14 @@
 <updates>
+  <update version="3.0.5">
+    <files>
+      <file path="Components/LiveSplit.LADX.dll" status="changed" />
+    </files>
+    <changelog>
+      <change>
+        Fixed bug with the Auto Reset function (3.0.5)
+      </change>
+    </changelog>
+  </update>
   <update version="3.0.4">
     <files>
       <file path="Components/LiveSplit.LADX.dll" status="changed" />

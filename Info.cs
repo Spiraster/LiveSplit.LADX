@@ -19,6 +19,8 @@ namespace LiveSplit.LADX
             new Info("BKGrab", "byte", 0, 0xF7A),
             new Info("SwordGrab", "byte", 0, 0xFF2),
 
+            new Info("ResetCheck", "byte", 0, 0xEFF),
+
             //0x1XXX pointers
             new Info("D1Enter", "byte", 1, 0x917),
             new Info("D2Enter", "byte", 1, 0x936),
@@ -45,8 +47,8 @@ namespace LiveSplit.LADX
             new Info("Marin", "byte", 1, 0xB73),
             new Info("Steals", "byte", 1, 0xB6E),
             new Info("Photos", "short", 1, 0xC0C),
+
             new Info("VersionCheck", "int", 1, 0xC10),
-            new Info("ResetCheck", "byte", 1, 0xA0),
             new Info("FileSelect", "short", 1, 0xB95)
         };
 

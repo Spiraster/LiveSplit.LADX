@@ -1,3 +1,7 @@
+3.0.5 (2016-09-07):
+- Changed the pointer for "Reset Check" (the old pointer was triggering at Lanmolas)
+- Removed non-functioning 3ny% File Select split setting
+
 3.0.4 (2016-08-31):
 - Fixed D6 ICS split condition for LA route
 
