@@ -15,6 +15,7 @@ namespace LiveSplit.LADX
         public LADXSettings()
         {
             InitializeComponent();
+            this.lblVersion.Text = "v" + Assembly.GetExecutingAssembly().GetName().Version.ToString(3);
             this.treeView1.DrawMode = TreeViewDrawMode.OwnerDrawAll;
             this.treeView1.DrawNode += new DrawTreeNodeEventHandler(treeView1.tree_DrawNode);
 

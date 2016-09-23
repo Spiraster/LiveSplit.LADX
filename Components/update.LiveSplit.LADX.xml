@@ -1,4 +1,17 @@
 <updates>
+  <update version="3.0.6">
+    <files>
+      <file path="Components/LiveSplit.LADX.dll" status="changed" />
+    </files>
+    <changelog>
+      <change>
+        Added "Bracelet" split condition (3.0.6)
+      </change>
+      <change>
+        Added "Magic Rod" split condition (3.0.6)
+      </change>
+    </changelog>
+  </update>
   <update version="3.0.5">
     <files>
       <file path="Components/LiveSplit.LADX.dll" status="changed" />

@@ -70,30 +70,34 @@
             treeNode20});
             System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Tail Key");
             System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Bird Key");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Flippers");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Magnifying Lens");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("L1 Sword");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("L2 Sword");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Items", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Bracelet (L1)");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Flippers");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Magic Rod");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Magnifying Lens");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("L1 Sword");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("L2 Sword");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Items", new System.Windows.Forms.TreeNode[] {
             treeNode22,
             treeNode23,
             treeNode24,
             treeNode25,
             treeNode26,
-            treeNode27});
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Shoplifting");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Marin");
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Rooster Photo");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Ballad of the Wind Fish (Song 1)");
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Manbo\'s Mambo (Song 2)");
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Frog\'s Song of Soul (Song 3)");
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Others", new System.Windows.Forms.TreeNode[] {
-            treeNode29,
-            treeNode30,
+            treeNode27,
+            treeNode28,
+            treeNode29});
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Shoplifting");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Marin");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Rooster Photo");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Ballad of the Wind Fish (Song 1)");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Manbo\'s Mambo (Song 2)");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Frog\'s Song of Soul (Song 3)");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Others", new System.Windows.Forms.TreeNode[] {
             treeNode31,
             treeNode32,
             treeNode33,
-            treeNode34});
+            treeNode34,
+            treeNode35,
+            treeNode36});
             this.chkStartTimer = new System.Windows.Forms.CheckBox();
             this.chkSelectFile = new System.Windows.Forms.CheckBox();
             this.chkAutoReset = new System.Windows.Forms.CheckBox();
@@ -101,6 +105,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.treeView1 = new LiveSplit.LADX.NewTreeView();
+            this.lblVersion = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -160,7 +165,7 @@
             this.groupBox2.Controls.Add(this.chkICSTimings);
             this.groupBox2.Location = new System.Drawing.Point(10, 380);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(455, 111);
+            this.groupBox2.Size = new System.Drawing.Size(464, 111);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Options";
@@ -170,7 +175,7 @@
             this.groupBox1.Controls.Add(this.treeView1);
             this.groupBox1.Location = new System.Drawing.Point(10, 10);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(455, 364);
+            this.groupBox1.Size = new System.Drawing.Size(464, 364);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select the splits you would like the autosplitter to split for:";
@@ -227,52 +232,71 @@
             treeNode22.Text = "Tail Key";
             treeNode23.Name = "node_BK";
             treeNode23.Text = "Bird Key";
-            treeNode24.Name = "node_Flippers";
-            treeNode24.Text = "Flippers";
-            treeNode25.Name = "node_ML";
-            treeNode25.Text = "Magnifying Lens";
-            treeNode26.Name = "node_L1S";
-            treeNode26.Text = "L1 Sword";
-            treeNode27.Name = "node_L2S";
-            treeNode27.Text = "L2 Sword";
-            treeNode28.Name = "Node2";
-            treeNode28.Text = "Items";
-            treeNode29.Name = "node_Shop";
-            treeNode29.Text = "Shoplifting";
-            treeNode30.Name = "node_Marin";
-            treeNode30.Text = "Marin";
-            treeNode31.Name = "node_RP";
-            treeNode31.Text = "Rooster Photo";
-            treeNode32.Name = "node_Song1";
-            treeNode32.Text = "Ballad of the Wind Fish (Song 1)";
-            treeNode33.Name = "node_Song2";
-            treeNode33.Text = "Manbo\'s Mambo (Song 2)";
-            treeNode34.Name = "node_Song3";
-            treeNode34.Text = "Frog\'s Song of Soul (Song 3)";
-            treeNode35.Name = "Node3";
-            treeNode35.Text = "Others";
+            treeNode24.Name = "node_D2T";
+            treeNode24.Text = "Bracelet (L1)";
+            treeNode25.Name = "node_D4T";
+            treeNode25.Text = "Flippers";
+            treeNode26.Name = "node_D8T";
+            treeNode26.Text = "Magic Rod";
+            treeNode27.Name = "node_ML";
+            treeNode27.Text = "Magnifying Lens";
+            treeNode28.Name = "node_L1S";
+            treeNode28.Text = "L1 Sword";
+            treeNode29.Name = "node_L2S";
+            treeNode29.Text = "L2 Sword";
+            treeNode30.Name = "Node2";
+            treeNode30.Text = "Items";
+            treeNode31.Name = "node_Shop";
+            treeNode31.Text = "Shoplifting";
+            treeNode32.Name = "node_Marin";
+            treeNode32.Text = "Marin";
+            treeNode33.Name = "node_RP";
+            treeNode33.Text = "Rooster Photo";
+            treeNode34.Name = "node_Song1";
+            treeNode34.Text = "Ballad of the Wind Fish (Song 1)";
+            treeNode35.Name = "node_Song2";
+            treeNode35.Text = "Manbo\'s Mambo (Song 2)";
+            treeNode36.Name = "node_Song3";
+            treeNode36.Text = "Frog\'s Song of Soul (Song 3)";
+            treeNode37.Name = "Node3";
+            treeNode37.Text = "Others";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode10,
             treeNode21,
-            treeNode28,
-            treeNode35});
-            this.treeView1.Size = new System.Drawing.Size(449, 345);
+            treeNode30,
+            treeNode37});
+            this.treeView1.Size = new System.Drawing.Size(458, 345);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterCheck);
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblVersion.AutoSize = true;
+            this.lblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersion.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lblVersion.Location = new System.Drawing.Point(440, 1);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(37, 13);
+            this.lblVersion.TabIndex = 21;
+            this.lblVersion.Text = "v0.0.0";
+            this.lblVersion.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // LADXSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Name = "LADXSettings";
             this.Padding = new System.Windows.Forms.Padding(7);
-            this.Size = new System.Drawing.Size(475, 501);
+            this.Size = new System.Drawing.Size(484, 513);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -284,5 +308,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private LiveSplit.LADX.NewTreeView treeView1;
+        private System.Windows.Forms.Label lblVersion;
     }
 }
