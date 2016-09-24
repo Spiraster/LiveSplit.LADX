@@ -8,7 +8,7 @@
         D6 and D8 ICS splits will trigger whether you kill the miniboss or not (3.0.7)
       </change>
       <change>
-        D8 ICS split triggers in first room of dungeon rather than outside to accomodate backtracking in new route (3.0.7)
+        D8 ICS split triggers in first room of dungeon rather than outside to accommodate backtracking in new route (3.0.7)
       </change>
     </changelog>
   </update>
