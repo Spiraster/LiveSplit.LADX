@@ -1,14 +1,27 @@
 <updates>
+  <update version="3.0.7">
+    <files>
+      <file path="Components/LiveSplit.LADX.dll" status="changed" />
+    </files>
+    <changelog>
+      <change>
+        D6 and D8 ICS splits will trigger whether you kill the miniboss or not (3.0.7)
+      </change>
+      <change>
+        D8 ICS split triggers in first room of dungeon rather than outside to accomodate backtracking in new route (3.0.7)
+      </change>
+    </changelog>
+  </update>
   <update version="3.0.6">
     <files>
       <file path="Components/LiveSplit.LADX.dll" status="changed" />
     </files>
     <changelog>
       <change>
-        Added "Bracelet" split condition (3.0.6)
+        Added "Bracelet" split (3.0.6)
       </change>
       <change>
-        Added "Magic Rod" split condition (3.0.6)
+        Added "Magic Rod" split (3.0.6)
       </change>
     </changelog>
   </update>
@@ -28,7 +41,7 @@
     </files>
     <changelog>
       <change>
-        Fixed D6 ICS split condition (3.0.4)
+        Fixed D6 ICS split (3.0.4)
       </change>
     </changelog>
   </update>
@@ -38,7 +51,7 @@
     </files>
     <changelog>
       <change>
-        Changed D8 ICS split condition to work with Blaino Skip (3.0.3)
+        Changed D8 ICS split to work with Blaino Skip (3.0.3)
       </change>
     </changelog>
   </update>
@@ -58,7 +71,7 @@
     </files>
     <changelog>
       <change>
-        Fixed issue where certain split conditions would not trigger after resetting the timer (3.0.1)
+        Fixed issue where certain splits would not trigger after resetting the timer (3.0.1)
       </change>
     </changelog>
   </update>
@@ -110,7 +123,7 @@
         Fixed issue with loading of settings (2.3.1)
       </change>
       <change>
-        Fixed issue with certain ICS split conditions (2.3.1)
+        Fixed issue with certain ICS splits (2.3.1)
       </change>
     </changelog>
   </update>

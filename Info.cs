@@ -7,7 +7,7 @@ namespace LiveSplit.LADX
     {
         public static InfoList Pointers = new InfoList
         {
-            //0x0XXX pointers
+            //WRAM0 pointers
             new Info("D1Grab", "byte", 0, 0xF02),
             new Info("D2Grab", "byte", 0, 0xF2A),
             new Info("D3Grab", "byte", 0, 0xF59),
@@ -21,7 +21,7 @@ namespace LiveSplit.LADX
 
             new Info("ResetCheck", "byte", 0, 0xEFF),
 
-            //0x1XXX pointers
+            //WRAM1 pointers
             new Info("D1Enter", "byte", 1, 0x917),
             new Info("D2Enter", "byte", 1, 0x936),
             new Info("D3Enter", "byte", 1, 0x952),
@@ -39,6 +39,8 @@ namespace LiveSplit.LADX
             new Info("D6Instrument", "byte", 1, 0xB6A),
             new Info("D7Instrument", "byte", 1, 0xB6B),
             new Info("D8Instrument", "byte", 1, 0xB6C),
+            //new Info("OverworldTile", "byte", 1, 0xB54),
+            new Info("DungeonTile", "byte", 1, 0xBAE),
             new Info("Music1", "short", 1, 0x3CA),
             new Info("Music2", "byte", 1, 0x3CA),
             new Info("Sound", "byte", 1, 0x3C8),
@@ -83,7 +85,7 @@ namespace LiveSplit.LADX
             new Info("L1S", "SwordGrab", 2),
             new Info("L2S", "Music1", 0x360F),
 
-            new Info("D0", new Dictionary<string, int> { { "Music1", 0x610C }, { "Sound", 1 } }),
+            new Info("D0", new InfoList { new Info("Music1", 0x610C), new Info("Sound", 1) }),
             new Info("Egg", "Music1", 0x5939)
         };
 
@@ -103,14 +105,14 @@ namespace LiveSplit.LADX
         public static InfoList ICSSplits = new InfoList
         {
             //instruments
-            new Info("D1", new Dictionary<string, int> { { "D1Instrument", 3 }, { "Music2", 5 } }),
-            new Info("D2", new Dictionary<string, int> { { "D2Instrument", 3 }, { "Music2", 5 } }),
-            new Info("D3", new Dictionary<string, int> { { "D3Instrument", 3 }, { "Music2", 5 } }),
-            new Info("D4", new Dictionary<string, int> { { "D4Instrument", 3 }, { "Music2", 5 } }),
-            new Info("D5", new Dictionary<string, int> { { "D5Instrument", 2 }, { "Music2", 5 } }),
-            new Info("D6", new Dictionary<string, int> { { "D6Instrument", 2 }, { "Music2", 5 } }),
-            new Info("D7", new Dictionary<string, int> { { "D7Instrument", 6 }, { "Music2", 6 } }),
-            new Info("D8", new Dictionary<string, int> { { "D8Instrument", 2 }, { "Music2", 6 } }),
+            new Info("D1", new InfoList { new Info("D1Instrument", 3), new Info("Music2", 5) }),
+            new Info("D2", new InfoList { new Info("D2Instrument", 3), new Info("Music2", 5) }),
+            new Info("D3", new InfoList { new Info("D3Instrument", 3), new Info("Music2", 5) }),
+            new Info("D4", new InfoList { new Info("D4Instrument", 3), new Info("Music2", 5) }),
+            new Info("D5", new InfoList { new Info("D5Instrument", 2), new Info("Music2", 5) }),
+            new Info("D6", new InfoList { new Info("D6Instrument", 2, ">="), new Info("Music2", 5) }),
+            new Info("D7", new InfoList { new Info("D7Instrument", 6), new Info("Music2", 6) }),
+            new Info("D8", new InfoList { new Info("D8Instrument", 2, ">="), new Info("DungeonTile", 0x3B) }),
         };
     }
 
@@ -122,11 +124,21 @@ namespace LiveSplit.LADX
         public int Index { get; }
         public int Offset { get; }
 
-        public Dictionary<string, int> Triggers { get; }
+        public InfoList Triggers { get; }
+
+        public string Pointer { get; }
+        public int Value { get; }
+        public string Operator { get; }
 
         public bool isEnabled { get; set; }
 
-        //pointer
+        /// <summary>
+        /// For pointers
+        /// </summary>
+        /// <param name="_name"></param>
+        /// <param name="_type"></param>
+        /// <param name="_index"></param>
+        /// <param name="_offset"></param>
         public Info(string _name, string _type, int _index, int _offset)
         {
             Name = _name;
@@ -135,21 +147,47 @@ namespace LiveSplit.LADX
             Offset = _offset;
         }
 
-        //split
-        public Info(string _name, string _pointer, int _condition)
+        /// <summary>
+        /// For a single-trigger split
+        /// </summary>
+        /// <param name="_name"></param>
+        /// <param name="_pointer"></param>
+        /// <param name="_condition"></param>
+        public Info(string _name, string _pointer, int _value)
         {
             Name = _name;
-            Triggers = new Dictionary<string, int> { { _pointer, _condition } };
+            Triggers = new InfoList { new Info(_pointer, _value) };
         }
 
-        //split
-        public Info(string _name, Dictionary<string, int> _triggers)
+        /// <summary>
+        /// For a multiple-trigger split
+        /// </summary>
+        /// <param name="_name"></param>
+        /// <param name="_triggers"></param>
+        public Info(string _name, InfoList _triggers)
         {
             Name = _name;
             Triggers = _triggers;
         }
+        
+        /// <summary>
+        /// For split triggers
+        /// </summary>
+        /// <param name="_pointer"></param>
+        /// <param name="_value"></param>
+        /// <param name="_op"></param>
+        public Info(string _pointer, int _value, string _op = "==")
+        {
+            Pointer = _pointer;
+            Value = _value;
+            Operator = _op;
+        }
 
-        //settings
+        /// <summary>
+        /// For split settings
+        /// </summary>
+        /// <param name="_name"></param>
+        /// <param name="_enabled"></param>
         public Info(string _name, bool _enabled)
         {
             Name = _name;

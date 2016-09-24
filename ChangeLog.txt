@@ -1,23 +1,28 @@
+3.0.7 (2016-09-24):
+- D6 and D8 ICS splits will now trigger whether or not the minibosses are killed
+- D8 ICS split will now trigger in the first room of the dungeon rather than just outside. This is to better suit the backtracking done in the new route.
+- Slightly changed how multi-condition splits are handled
+
 3.0.6 (2016-09-22):
-- Added "Bracelet" split condition
-- Added "Magic Rod" split condition
+- Added "Bracelet" split
+- Added "Magic Rod" split
 - Added version label to settings dialog
 
 3.0.5 (2016-09-07):
 - Changed the pointer for "Reset Check" (the old pointer was triggering at Lanmolas)
-- Removed non-functioning 3ny% File Select split setting
+- Removed non-functioning 3ny% File Select split
 
 3.0.4 (2016-08-31):
-- Fixed D6 ICS split condition for LA route
+- Fixed D6 ICS split for LA route
 
 3.0.3 (2016-08-30):
-- Changed D8 ICS split condition to work with Blaino Skip
+- Changed D8 ICS split to work with Blaino Skip
 
 3.0.2 (2016-08-16):
 - Fixed issue where ICS timings would always be used in LA regardless of the setting
 
 3.0.1 (2016-08-16):
-- Fixed issue where split conditions that had triggered in a previous run wouldn't trigger again after resetting the timer
+- Fixed issue where splits that had triggered in a previous run wouldn't trigger again after resetting the timer
 
 3.0.0 (2016-08-06):
 - Implemented MemoryWatchers
@@ -44,7 +49,7 @@
   - D4 would split early
 
 2.3.0 (2016-07-19):
-- Added new split conditions for when using ICS in LA
+- Added new splits for when using ICS in LA
 - Added option to toggle ICS splits
 - Consolidated pointer code & added new constructor for DeepPointer
 - Reorganized the split tabs in the settings UI
@@ -59,7 +64,7 @@
 - Removed hard coding for default split names
 
 2.2.0 (2016-05-26):
-- Added a number of new split conditions (primarily for 100% runs)
+- Added a number of new splits (primarily for 100% runs)
 - Streamlined the Settings code
 
 2.1.4 (2016-05-16):
@@ -96,7 +101,7 @@
 - Added "auto start" option for timer
 
 1.0.1 (2016-04-28):
-- Fixed "Bird Key" split condition
+- Fixed "Bird Key" split
 - Attemped fix of "auto file select" option
 
 1.0.0 (2016-04-21):

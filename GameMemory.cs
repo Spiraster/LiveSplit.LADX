@@ -83,9 +83,17 @@ namespace LiveSplit.LADX
                 int count = 0;
                 foreach (var _trigger in _split.Triggers)
                 {
-                    int _int = Convert.ToInt32(data[_trigger.Key].Current);
-                    if (_int == _trigger.Value)
-                        count++;
+                    int _int = Convert.ToInt32(data[_trigger.Pointer].Current);
+                    if (_trigger.Operator == ">=")
+                    {
+                        if (_int >= _trigger.Value)
+                            count++;
+                    }
+                    else
+                    {
+                        if (_int == _trigger.Value)
+                            count++;
+                    }
                 }
 
                 if (count == _split.Triggers.Count)
