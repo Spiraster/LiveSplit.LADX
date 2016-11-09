@@ -69,14 +69,16 @@
             treeNode19,
             treeNode20});
             System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("Tail Key");
-            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Bird Key");
-            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Bracelet (L1)");
-            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Flippers");
-            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Magic Rod");
-            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Magnifying Lens");
-            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("L1 Sword");
-            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("L2 Sword");
-            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("Items", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("Angler Key");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("Bird Key");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("Bracelet (L1)");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("Boots");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("Flippers");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("Magic Rod");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("Magnifying Lens");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("L1 Sword");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("L2 Sword");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Items", new System.Windows.Forms.TreeNode[] {
             treeNode22,
             treeNode23,
             treeNode24,
@@ -84,20 +86,22 @@
             treeNode26,
             treeNode27,
             treeNode28,
-            treeNode29});
-            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("Shoplifting");
-            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("Marin");
-            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Rooster Photo");
-            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Ballad of the Wind Fish (Song 1)");
-            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Manbo\'s Mambo (Song 2)");
-            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Frog\'s Song of Soul (Song 3)");
-            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Others", new System.Windows.Forms.TreeNode[] {
-            treeNode31,
-            treeNode32,
+            treeNode29,
+            treeNode30,
+            treeNode31});
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("Shoplifting");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("Marin");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("Rooster Photo");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("Ballad of the Wind Fish (Song 1)");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("Manbo\'s Mambo (Song 2)");
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("Frog\'s Song of Soul (Song 3)");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("Others", new System.Windows.Forms.TreeNode[] {
             treeNode33,
             treeNode34,
             treeNode35,
-            treeNode36});
+            treeNode36,
+            treeNode37,
+            treeNode38});
             this.chkStartTimer = new System.Windows.Forms.CheckBox();
             this.chkSelectFile = new System.Windows.Forms.CheckBox();
             this.chkAutoReset = new System.Windows.Forms.CheckBox();
@@ -230,41 +234,45 @@
             treeNode21.Text = "Instruments (Dungeon Ends)";
             treeNode22.Name = "node_TK";
             treeNode22.Text = "Tail Key";
-            treeNode23.Name = "node_BK";
-            treeNode23.Text = "Bird Key";
-            treeNode24.Name = "node_D2T";
-            treeNode24.Text = "Bracelet (L1)";
-            treeNode25.Name = "node_D4T";
-            treeNode25.Text = "Flippers";
-            treeNode26.Name = "node_D8T";
-            treeNode26.Text = "Magic Rod";
-            treeNode27.Name = "node_ML";
-            treeNode27.Text = "Magnifying Lens";
-            treeNode28.Name = "node_L1S";
-            treeNode28.Text = "L1 Sword";
-            treeNode29.Name = "node_L2S";
-            treeNode29.Text = "L2 Sword";
-            treeNode30.Name = "Node2";
-            treeNode30.Text = "Items";
-            treeNode31.Name = "node_Shop";
-            treeNode31.Text = "Shoplifting";
-            treeNode32.Name = "node_Marin";
-            treeNode32.Text = "Marin";
-            treeNode33.Name = "node_RP";
-            treeNode33.Text = "Rooster Photo";
-            treeNode34.Name = "node_Song1";
-            treeNode34.Text = "Ballad of the Wind Fish (Song 1)";
-            treeNode35.Name = "node_Song2";
-            treeNode35.Text = "Manbo\'s Mambo (Song 2)";
-            treeNode36.Name = "node_Song3";
-            treeNode36.Text = "Frog\'s Song of Soul (Song 3)";
-            treeNode37.Name = "Node3";
-            treeNode37.Text = "Others";
+            treeNode23.Name = "node_AK";
+            treeNode23.Text = "Angler Key";
+            treeNode24.Name = "node_BK";
+            treeNode24.Text = "Bird Key";
+            treeNode25.Name = "node_D2T";
+            treeNode25.Text = "Bracelet (L1)";
+            treeNode26.Name = "node_D3T";
+            treeNode26.Text = "Boots";
+            treeNode27.Name = "node_D4T";
+            treeNode27.Text = "Flippers";
+            treeNode28.Name = "node_D8T";
+            treeNode28.Text = "Magic Rod";
+            treeNode29.Name = "node_ML";
+            treeNode29.Text = "Magnifying Lens";
+            treeNode30.Name = "node_L1S";
+            treeNode30.Text = "L1 Sword";
+            treeNode31.Name = "node_L2S";
+            treeNode31.Text = "L2 Sword";
+            treeNode32.Name = "Node2";
+            treeNode32.Text = "Items";
+            treeNode33.Name = "node_Shop";
+            treeNode33.Text = "Shoplifting";
+            treeNode34.Name = "node_Marin";
+            treeNode34.Text = "Marin";
+            treeNode35.Name = "node_RP";
+            treeNode35.Text = "Rooster Photo";
+            treeNode36.Name = "node_Song1";
+            treeNode36.Text = "Ballad of the Wind Fish (Song 1)";
+            treeNode37.Name = "node_Song2";
+            treeNode37.Text = "Manbo\'s Mambo (Song 2)";
+            treeNode38.Name = "node_Song3";
+            treeNode38.Text = "Frog\'s Song of Soul (Song 3)";
+            treeNode39.Name = "Node3";
+            treeNode39.Text = "Others";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode10,
             treeNode21,
-            treeNode30,
-            treeNode37});
+            treeNode32,
+            treeNode39});
             this.treeView1.Size = new System.Drawing.Size(458, 345);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterCheck);

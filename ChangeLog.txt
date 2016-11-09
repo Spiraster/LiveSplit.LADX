@@ -1,3 +1,10 @@
+3.0.8 (2016-11-09):
+- Fixed issue with instrument splits splitting early (was using addresses that were also used for enemy kill counts)
+- Added "Boots" split
+- Added "Angler Key" split
+- Switched to MainModuleWow64Safe() in getGameProcess()
+- Fixed potential issue with auto file select in onStart
+
 3.0.7 (2016-09-24):
 - D6 and D8 ICS splits will now trigger whether or not the minibosses are killed
 - D8 ICS split will now trigger in the first room of the dungeon rather than just outside. This is to better suit the backtracking done in the new route.

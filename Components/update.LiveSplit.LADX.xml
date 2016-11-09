@@ -1,4 +1,17 @@
 <updates>
+  <update version="3.0.8">
+    <files>
+      <file path="Components/LiveSplit.LADX.dll" status="changed" />
+    </files>
+    <changelog>
+      <change>
+        Fixed issue with instrument splits splitting early
+      </change>
+      <change>
+        Added "Boots" and "Angler Key" splits
+      </change>
+    </changelog>
+  </update>
   <update version="3.0.7">
     <files>
       <file path="Components/LiveSplit.LADX.dll" status="changed" />

@@ -8,17 +8,6 @@ namespace LiveSplit.LADX
         public static InfoList Pointers = new InfoList
         {
             //WRAM0 pointers
-            new Info("D1Grab", "byte", 0, 0xF02),
-            new Info("D2Grab", "byte", 0, 0xF2A),
-            new Info("D3Grab", "byte", 0, 0xF59),
-            new Info("D4Grab", "byte", 0, 0xF62),
-            new Info("D5Grab", "byte", 0, 0xF82),
-            new Info("D6Grab", "byte", 0, 0xFB5),
-            new Info("D7Grab", "byte", 0, 0xF2C),
-            new Info("D8Grab", "byte", 0, 0xF30),
-            new Info("BKGrab", "byte", 0, 0xF7A),
-            new Info("SwordGrab", "byte", 0, 0xFF2),
-
             new Info("ResetCheck", "byte", 0, 0xEFF),
 
             //WRAM1 pointers
@@ -39,13 +28,15 @@ namespace LiveSplit.LADX
             new Info("D6Instrument", "byte", 1, 0xB6A),
             new Info("D7Instrument", "byte", 1, 0xB6B),
             new Info("D8Instrument", "byte", 1, 0xB6C),
-            //new Info("OverworldTile", "byte", 1, 0xB54),
+            new Info("OverworldTile", "byte", 1, 0xB54),
             new Info("DungeonTile", "byte", 1, 0xBAE),
             new Info("Music1", "short", 1, 0x3CA),
             new Info("Music2", "byte", 1, 0x3CA),
             new Info("Sound", "byte", 1, 0x3C8),
             new Info("TailKey", "byte", 1, 0xB11),
+            new Info("AnglerKey", "byte", 1, 0xB12),
             new Info("Bracelet", "byte", 1, 0x920),
+            new Info("Boots", "byte", 1, 0x946),
             new Info("Flippers", "byte", 1, 0xB0C),
             new Info("MagicRod", "byte", 1, 0xA37),
             new Info("Marin", "byte", 1, 0xB73),
@@ -71,9 +62,11 @@ namespace LiveSplit.LADX
                 
             //keys, items and others
             new Info("TK", "TailKey", 1),
-            new Info("BK", "BKGrab", 1),
+            new Info("AK", new InfoList { new Info("Music2", 0x10), new Info("OverworldTile", 0xCE) }),
+            new Info("BK", new InfoList { new Info("Music2", 0x10), new Info("OverworldTile", 0x0A) }),
             new Info("Shop", "Steals", 2),
             new Info("D2T", "Bracelet", 0x91),
+            new Info("D3T", "Boots", 0x9B),
             new Info("D4T", "Flippers", 1),
             new Info("D8T", "MagicRod", 0x98),
             new Info("Marin", "Marin", 1),
@@ -81,25 +74,24 @@ namespace LiveSplit.LADX
             new Info("Song1", "Music1", 0x2A10),
             new Info("Song2", "Music1", 0x2010),
             new Info("Song3", "Music1", 0x3510),
-            new Info("ML", "Music1", 0x1610),
-            new Info("L1S", "SwordGrab", 2),
-            new Info("L2S", "Music1", 0x360F),
-
+            new Info("ML", new InfoList { new Info("Music2", 0x10), new Info("OverworldTile", 0xE9) }),
+            new Info("L1S", new InfoList { new Info("Music2", 0x0F), new Info("OverworldTile", 0xF2) }),
+            new Info("L2S", new InfoList { new Info("Music2", 0x0F), new Info("OverworldTile", 0x8A) }),
             new Info("D0", new InfoList { new Info("Music1", 0x610C), new Info("Sound", 1) }),
-            new Info("Egg", "Music1", 0x5939)
+            new Info("Egg", new InfoList { new Info("Music2", 0x39), new Info("OverworldTile", 0x06) })
         };
 
         public static InfoList InstrumentSplits = new InfoList
         {
             //instruments
-            new Info("D1", "D1Grab", 1),
-            new Info("D2", "D2Grab", 1),
-            new Info("D3", "D3Grab", 1),
-            new Info("D4", "D4Grab", 1),
-            new Info("D5", "D5Grab", 1),
-            new Info("D6", "D6Grab", 1),
-            new Info("D7", "D7Grab", 1),
-            new Info("D8", "D8Grab", 1),
+            new Info("D1", new InfoList { new Info("Music2", 0x0B), new Info("OverworldTile", 0xD3) }),
+            new Info("D2", new InfoList { new Info("Music2", 0x0B), new Info("OverworldTile", 0x24) }),
+            new Info("D3", new InfoList { new Info("Music2", 0x0B), new Info("OverworldTile", 0xB5) }),
+            new Info("D4", new InfoList { new Info("Music2", 0x0B), new Info("OverworldTile", 0x2B) }),
+            new Info("D5", new InfoList { new Info("Music2", 0x0B), new Info("OverworldTile", 0xD9) }),
+            new Info("D6", new InfoList { new Info("Music2", 0x0B), new Info("OverworldTile", 0x8C) }),
+            new Info("D7", new InfoList { new Info("Music2", 0x0B), new Info("OverworldTile", 0x0E) }),
+            new Info("D8", new InfoList { new Info("Music2", 0x0B), new Info("OverworldTile", 0x10) })
         };
 
         public static InfoList ICSSplits = new InfoList
