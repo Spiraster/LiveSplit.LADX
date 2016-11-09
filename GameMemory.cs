@@ -99,7 +99,6 @@ namespace LiveSplit.LADX
                 if (count == _split.Triggers.Count)
                 {
                     splits.Remove(_split);
-                    MessageBox.Show(_split.Name);
                     return true;
                 }
             }

@@ -1,4 +1,11 @@
 <updates>
+  <update version="3.0.8.1">
+    <files>
+      <file path="Components/LiveSplit.LADX.dll" status="changed" />
+    </files>
+    <changelog>
+    </changelog>
+  </update>
   <update version="3.0.8">
     <files>
       <file path="Components/LiveSplit.LADX.dll" status="changed" />
