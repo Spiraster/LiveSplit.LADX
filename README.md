@@ -1,3 +1,5 @@
+***This component has been replaced by the ASL script found at: https://github.com/Spiraster/ASLScripts/tree/master/LiveSplit.LADX***
+
 # LiveSplit.LADX
 This is a LiveSplit autosplitter component for Link's Awakening and Link's Awakening DX on emulator.
 
